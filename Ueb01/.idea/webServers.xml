@@ -2,8 +2,15 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="82acdc06-186f-495c-b4c8-8505122759a8" name="lokal" url="http://localhost">
-        <fileTransfer mountedRoot="$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/Webentwicklung/Ueb01" accessType="MOUNT" port="0" />
+      <webServer id="2a112009-4107-4b9e-b99e-774d79c67acc" name="000webhost" url="http://files.000webhost.com">
+        <fileTransfer host="files.000webhost.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b5bb314b-1e0f-457f-9ca1-1d561b956079" name="lokalNeu" url="http://localhost">
+        <fileTransfer mountedRoot="/Applications/XAMPP/xamppfiles/htdocs/Webentwicklung/ueb01" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>
