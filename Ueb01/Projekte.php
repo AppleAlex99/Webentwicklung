@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ToDo Liste</title>
+    <title>Projekte</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -10,9 +10,10 @@
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="glyphter-font/css/name.css" rel="stylesheet">
 
     <div class="jumbotron text-center">
-        <h1 class="display-4">Aufgabenplaner: Todos(Aktuelles Projekt)</h1>
+        <h1 class="display-4">Aufgabenplaner: Projekte</h1>
     </div>
 
 
@@ -35,35 +36,44 @@
 
         </div>
         <div class="col">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-header">ToDo</div>
-                    <div class="list-group">
-                        <div class="list-group-item"
-                        <li>schlafen</li>
-                    </div>
-                </div>
+
+
+            <form>
+            <div class="form-group">
+                <label for="sel1">Projekt auswählen</label>
+                <select class="form-control" id="sel1">
+                    <option>-bitte auswählen-</option>
+                    <option>nichts tun</option>
+                    <option>schlafen</option>
+                    <option>sport</option>
+                    <option>bier</option>
+                </select>
             </div>
-            <div class="card">
-                <div class="card-header">Erledigt</div>
-                <div class="list-group">
-                    <div class="list-group-item"
-                    <li>schlafen</li>
-                </div>
+                <button class="btn btn-primary" type="submit">Auswählen</button>
+                <button class="btn btn-primary" type="submit">Bearbeiten</button>
+                <button class="btn btn-danger" type="submit">Löschen</button>
+            </form>
+
+            <br>
+            <br>
+            <h3>Neues Projekt anlegen</h3>
+            <form>
+            <div class="form-group">
+                <label for="projektname">Projektname</label>
+                <input type="text" class="form-control" id="projektname">
             </div>
-        </div>
-        <div class="card">
-            <div class="card-header">Verschieben</div>
-            <div class="list-group">
-                <div class="list-group-item"
-                <li>Webentwicklung Übung 2</li>
+            <div class="form-group">
+                <label for="beschreibung">Projektbeschreibung</label>
+                <textarea class="form-control" rows="5" id="beschreibung"></textarea>
             </div>
+                <button class="btn btn-primary" type="submit">Speichern</button>
+                <button class="btn btn-success" type="submit">Reset</button>
+            </form>
+
+
+
         </div>
     </div>
-</div>
-</div>
-</div>
-
 </div>
 
 </body>

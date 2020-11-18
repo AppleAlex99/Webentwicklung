@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="glyphter-font/css/name.css" rel="stylesheet">
 
     <div class="jumbotron text-center">
         <h1 class="display-4">Aufgabenplaner: Todos(Aktuelles Projekt)</h1>
