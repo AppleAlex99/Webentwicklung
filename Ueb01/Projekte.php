@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="glyphter-font/css/name.css" rel="stylesheet">
+
 
     <div class="jumbotron text-center">
         <h1 class="display-4">Aufgabenplaner: Projekte</h1>
@@ -23,15 +23,28 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-            <!-- As a link -->
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="Login.php">Login............</a>
-                <a class="navbar-brand" href="Projekte.php">Projekte.........</a>
-                <a class="navbar-brand" href="index.php">Aktuelles Projekt</a>
-                <a class="navbar-brand" href="Reiter.php">Reiter...........</a>
-                <a class="navbar-brand" href="Aufgaben.php">Aufgaben.........</a>
-                <a class="navbar-brand" href="Personen.php">Mitglieder.......</a>
 
+            <nav class="navbar navbar-light bg-light">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="Login.php">Login</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Projekte.php">Projekte</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="index.php">Aktuelles Projekt</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Reiter.php">Reiter</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Aufgaben.php">Aufgaben</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Personen.php">Mitglieder</a>
+                    </li>
+                </ul>
             </nav>
 
         </div>
@@ -61,8 +74,7 @@
             <div class="form-group">
                 <label for="projektname">Projektname</label>
                 <input type="text" class="form-control" id="projektname">
-            </div>
-            <div class="form-group">
+                <br>
                 <label for="beschreibung">Projektbeschreibung</label>
                 <textarea class="form-control" rows="5" id="beschreibung"></textarea>
             </div>

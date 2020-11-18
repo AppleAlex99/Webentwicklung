@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="glyphter-font/css/name.css" rel="stylesheet">
+
 
     <div class="jumbotron text-center">
         <h1 class="display-4">Aufgabenplaner: Login</h1>
@@ -23,14 +23,29 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-            <!-- As a link -->
+
             <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="Login.php">Login............</a>
-                <a class="navbar-brand" href="Projekte.php">Projekte.........</a>
-                <a class="navbar-brand" href="index.php">Aktuelles Projekt</a>
-                <a class="navbar-brand" href="Reiter.php">Reiter...........</a>
-                <a class="navbar-brand" href="Aufgaben.php">Aufgaben.........</a>
-                <a class="navbar-brand" href="Personen.php">Mitglieder.......</a>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="Login.php">Login</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Projekte.php">Projekte</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="index.php">Aktuelles Projekt</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Reiter.php">Reiter</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Aufgaben.php">Aufgaben</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Personen.php">Mitglieder</a>
+                    </li>
+                </ul>
+            </nav>
 
             </nav>
 
@@ -40,14 +55,24 @@
                 <div class="form-group">
                     <label for="Email">E-Mail</label>
                     <input type="email" class="form-control" id="email">
-
+                    <br>
                     <label for="Passwort">Passwort</label>
                     <input type="password" class="form-control" id="passwort">
 
                 </div>
-                <button type="submit" class="btn btn-primary">
-                    Log in
-                </button>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        AGBs und Datenschutzbestimmungen akzeptieren
+                    </label>
+                </div>
+                <br>
+
+                <button type="submit" class="btn btn-primary">Einloggen</button>
+                <br>
+                <br>
+                Noch nicht registriert?<a href="#" onclick=warningImp()> Hier registrieren</a>
             </form>
 
 
@@ -56,6 +81,11 @@
     </div>
 </div>
 
+<script>
+    function warningImp(){
+        alert("Noch nicht implementiert")
+    }
+</script>
 
 </body>
 <footer>
