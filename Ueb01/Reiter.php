@@ -11,36 +11,41 @@
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Aufgabenplaner: Reiter</h1>
-    </div>
-
-
 </head>
 <body>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Aufgabenplaner: Reiter</h1>
+</div>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
 
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="Login.php">Login</a>
+                        <a href="Login.php">
+                            Login
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="Projekte.php">Projekte</a>
+                        <a href="Projekte.php">
+                            Projekte
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="index.php">Aktuelles Projekt</a>
+                        <a href="index.php">
+                            Aktuelles Projekt
+                        </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="Reiter.php">Reiter</a>
+                    <li class="list-group-item active" style="width: 70%; margin-left: auto;text-align: center ">
+                        <a href="Reiter.php" style=" color: white">Reiter</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Aufgaben.php">Aufgaben</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Personen.php">Mitglieder</a>
                     </li>
                 </ul>

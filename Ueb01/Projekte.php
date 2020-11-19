@@ -10,38 +10,41 @@
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Aufgabenplaner: Projekte</h1>
-    </div>
-
-
 </head>
 <body>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Aufgabenplaner: Projekte</h1>
+</div>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
 
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="Login.php">Login</a>
+                        <a href="Login.php">
+                            Login
+                        </a>
+                    </li>
+                    <li class="list-group-item active">
+                        <a href="Projekte.php" style=" color: white">
+                            Projekte
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="Projekte.php">Projekte</a>
+                        <a href="index.php">
+                            Aktuelles Projekt
+                        </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="index.php">Aktuelles Projekt</a>
-                    </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Reiter.php">Reiter</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Aufgaben.php">Aufgaben</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Personen.php">Mitglieder</a>
                     </li>
                 </ul>
@@ -56,10 +59,10 @@
                 <label for="sel1">Projekt auswählen</label>
                 <select class="form-control" id="sel1">
                     <option>-bitte auswählen-</option>
-                    <option>nichts tun</option>
-                    <option>schlafen</option>
+                    <option>Webentwicklung</option>
+                    <option>Datenbanksysteme</option>
                     <option>sport</option>
-                    <option>bier</option>
+                    <option>pause</option>
                 </select>
             </div>
                 <button class="btn btn-primary" type="submit">Auswählen</button>

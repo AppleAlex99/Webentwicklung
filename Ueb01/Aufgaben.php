@@ -11,37 +11,41 @@
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Aufgabenplaner: Aufgaben</h1>
-    </div>
-
-
 </head>
 <body>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Aufgabenplaner: Aufgaben</h1>
+</div>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
 
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="Login.php">Login</a>
+                        <a href="Login.php">
+                            Login
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="Projekte.php">Projekte</a>
+                        <a href="Projekte.php">
+                            Projekte
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="index.php">Aktuelles Projekt</a>
+                        <a href="index.php">
+                            Aktuelles Projekt
+                        </a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Reiter.php">Reiter</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="Aufgaben.php">Aufgaben</a>
+                    <li class="list-group-item active" style="width: 70%; margin-left: auto;text-align: center ">
+                        <a href="Aufgaben.php" style=" color: white">Aufgaben</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Personen.php">Mitglieder</a>
                     </li>
                 </ul>
@@ -82,7 +86,7 @@
                     <th scope="row">CSS</th>
                     <td>CSS-Datei erstellen</td>
                     <td>ToDo</td>
-                    <td>Axel Kalenborn</td>
+                    <td>Alexander Winzig</td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -96,7 +100,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Google hacken</th>
-                    <td>Hackerangriff auf Google-Server starten</td>
+                    <td>Hackerangriff auf Google</td>
                     <td>Must do</td>
                     <td>Alexander Winzig</td>
                     <td>

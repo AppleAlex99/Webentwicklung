@@ -11,38 +11,42 @@
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Aufgabenplaner: Personen</h1>
-    </div>
-
-
 </head>
 <body>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Aufgabenplaner: Personen</h1>
+</div>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
 
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="Login.php">Login</a>
+                        <a href="Login.php">
+                            Login
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="Projekte.php">Projekte</a>
+                        <a href="Projekte.php">
+                            Projekte
+                        </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="index.php">Aktuelles Projekt</a>
+                        <a href="index.php">
+                            Aktuelles Projekt
+                        </a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Reiter.php">Reiter</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
                         <a href="Aufgaben.php">Aufgaben</a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="Personen.php">Mitglieder</a>
+                    <li class="list-group-item active" style="width: 70%; margin-left: auto;text-align: center ">
+                        <a href="Personen.php" style=" color: white">Mitglieder</a>
                     </li>
                 </ul>
             </nav>
@@ -82,8 +86,8 @@
 
                 </tr>
                 <tr>
-                    <th scope="row">Papaplatte</th>
-                    <td>papapa@uni-trier.de</td>
+                    <th scope="row">Albert Einstein</th>
+                    <td>s4aleins@uni-trier.de</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -104,7 +108,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Elon Musk</th>
-                    <td>elonmusk@uni-trier.de</td>
+                    <td>elmusk@uni-trier.de</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -134,10 +138,10 @@
                     <input type="text" class="form-control" id="nutzername">
                     <br>
                     <label for="emailadr">E-Mail-Adresse</label>
-                    <input class="form-control" rows="5" id="emailadr"/>
+                    <input class="form-control" id="emailadr"/>
                     <br>
                     <label for="passwort2">Passwort</label>
-                    <input class="form-control" rows="5" id="passwort2"/>
+                    <input class="form-control" id="passwort2"/>
                     <br>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
