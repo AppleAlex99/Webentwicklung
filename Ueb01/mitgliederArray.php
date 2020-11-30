@@ -10,7 +10,7 @@ $mitglieder = array(
 // Erzeuge den zweiten Array und speichere einige Werte darin
 
     array(
-        'id' => 3,
+        'id' => 2,
         'username' => 'elena',
         'email' => 'elena@example.com',
         'projektID' => 1

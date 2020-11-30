@@ -66,8 +66,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">HTML-Datei erstellen</th>
-                    <td>HTML-Datei erstellen lol</td>
+                    <th scope="row">HTML-Datei</th>
+                    <td>HTML-Datei erstellen</td>
                     <td>ToDo</td>
                     <td>Alexander Winzig</td>
                     <td>
@@ -99,8 +99,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">Google hacken</th>
-                    <td>Hackerangriff auf Google</td>
+                    <th scope="row">Datenbanksysteme</th>
+                    <td>Datenbanksysteme Übung 4 bearbeiten</td>
                     <td>Must do</td>
                     <td>Alexander Winzig</td>
                     <td>
