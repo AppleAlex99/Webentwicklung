@@ -19,6 +19,34 @@
 </head>
 <body>
 
+<?php
+$aufgaben = array(
+    0 => array(
+        'id' => 1,
+        'bezeichnung' => 'HTML-Datei',
+        'beschreibung' => 'HTML-Datei erstellen',
+        'reiter' => 'ToDo',
+        'zustaendig' => 'Alexander Winzig'
+    ),
+
+    1 => array(
+        'id' => 2,
+        'bezeichnung' => 'CSS',
+        'beschreibung' => 'CSS-Datei erstellen',
+        'reiter' => 'ToDo',
+        'zustaendig' => 'Alexander Winzig'
+    ),
+    2 => array(
+        'id' => 3,
+        'bezeichnung' => 'Datenbanksysteme',
+        'beschreibung' => 'Datenbanksysteme Übung 4 bearbeiten',
+        'reiter' => 'Must do',
+        'zustaendig' => 'Alexander Winzig'
+    ),
+);
+#var_dump($aufgaben)
+?>
+
 <div class="jumbotron text-center">
     <h1 class="display-4">Aufgabenplaner: Aufgaben</h1>
 </div>
@@ -26,36 +54,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-
-            <nav class="navbar">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="Login.php">
-                            Login
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="Projekte.php">
-                            Projekte
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="index.php">
-                            Aktuelles Projekt
-                        </a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Reiter.php">Reiter</a>
-                    </li>
-                    <li class="list-group-item active" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Aufgaben.php" style=" color: white">Aufgaben</a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Personen.php">Mitglieder</a>
-                    </li>
-                </ul>
-            </nav>
-
+            <?php include ('navbar.php')?>
         </div>
 
         <?php include("aufgabenArray.php"); ?>
@@ -73,10 +72,10 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">HTML-Datei</th>
-                    <td>HTML-Datei erstellen</td>
-                    <td>ToDo</td>
-                    <td>Alexander Winzig</td>
+                    <th scope="row"> <?php echo ($aufgaben[0]['bezeichnung']) ?> </th>
+                    <td> <?php echo ($aufgaben[0]['beschreibung']) ?> </td>
+                    <td> <?php echo ($aufgaben[0]['reiter']) ?> </td>
+                    <td> <?php echo ($aufgaben[0]['zustaendig']) ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -94,10 +93,10 @@
 
                 </tr>
                 <tr>
-                    <th scope="row">CSS</th>
-                    <td>CSS-Datei erstellen</td>
-                    <td>ToDo</td>
-                    <td>Alexander Winzig</td>
+                    <th scope="row"> <?php echo ($aufgaben[1]['bezeichnung']) ?> </th>
+                    <td> <?php echo ($aufgaben[1]['beschreibung']) ?> </td>
+                    <td> <?php echo ($aufgaben[1]['reiter']) ?> </td>
+                    <td> <?php echo ($aufgaben[1]['zustaendig']) ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -114,10 +113,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">Datenbanksysteme</th>
-                    <td>Datenbanksysteme Übung 4 bearbeiten</td>
-                    <td>Must do</td>
-                    <td>Alexander Winzig</td>
+                    <th scope="row"> <?php echo ($aufgaben[2]['bezeichnung']) ?> </th>
+                    <td> <?php echo ($aufgaben[2]['beschreibung']) ?> </td>
+                    <td> <?php echo ($aufgaben[2]['reiter']) ?> </td>
+                    <td> <?php echo ($aufgaben[2]['zustaendig']) ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">

@@ -19,6 +19,32 @@
 </head>
 <body>
 
+<?php
+$mitglieder = array(
+    0 => array(
+        'id' => 1,
+        'name' => 'Axel Kalenborn',
+        'email' => 'kalenborn@example.com',
+        'projektID' => 1
+    ),
+    1 => array(
+        'id' => 2,
+        'name' => 'Elena',
+        'email' => 'elena@example.com',
+        'projektID' => 1
+    ),
+    2 => array(
+        'id' => 3,
+        'name' => 'Alexander Winzig',
+        'email' => 's4alwinz@uni-trier.de',
+        'projektID' => 2
+    )
+);
+
+
+#var_dump($mitglieder)
+?>
+
 <div class="jumbotron text-center">
     <h1 class="display-4">Aufgabenplaner: Personen</h1>
 </div>
@@ -26,36 +52,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-
-            <nav class="navbar">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="Login.php">
-                            Login
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="Projekte.php">
-                            Projekte
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="index.php">
-                            Aktuelles Projekt
-                        </a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Reiter.php">Reiter</a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Aufgaben.php">Aufgaben</a>
-                    </li>
-                    <li class="list-group-item active" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Personen.php" style=" color: white">Mitglieder</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <?php include ('navbar.php')?>
+            </div>
 
 
         <div class="col">
@@ -70,8 +68,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"><?php include ("mitgliederArray.php"); echo "Name"?></th>
-                    <td>s4alwinz@uni-trier.de</td>
+                    <th scope="row"> <?php echo ($mitglieder[0]['name'])?> </th>
+                    <td> <?php echo ($mitglieder[0]['email'])?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -96,8 +94,8 @@
 
                 </tr>
                 <tr>
-                    <th scope="row">Albert Einstein</th>
-                    <td>s4aleins@uni-trier.de</td>
+                    <th scope="row"> <?php echo ($mitglieder[1]['name'])?> </th>
+                    <td> <?php echo ($mitglieder[1]['email'])?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -121,8 +119,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">Elon Musk</th>
-                    <td>elmusk@uni-trier.de</td>
+                    <th scope="row"> <?php echo ($mitglieder[2]['name'])?> </th>
+                    <td> <?php echo ($mitglieder[2]['email'])?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">

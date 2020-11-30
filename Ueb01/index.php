@@ -17,6 +17,27 @@
     <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
+
+<?php
+$todos = array(
+    0 => array(
+        'id' => 1,
+        'bezeichnung' => 'Webentwicklung Vorlesung'
+    ),
+
+    1 => array(
+        'id' => 2,
+        'bezeichnung' => 'Datenbanken Übung'
+    ),
+
+    2 => array(
+        'id' => 3,
+        'bezeichnung' => 'Datenbanken Vorlesung'
+    ),
+);
+#var_dump($todos)
+?>
+
 <div class="jumbotron text-center">
     <h1 class="display-4">Aufgabenplaner: Todos(Aktuelles Projekt)</h1>
 </div>
@@ -25,35 +46,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-
-            <nav class="navbar">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="Login.php">
-                            Login
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="Projekte.php">
-                            Projekte
-                        </a>
-                    </li>
-                    <li class="list-group-item active">
-                        <a href="index.php" style=" color: white">
-                            Aktuelles Projekt
-                        </a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Reiter.php">Reiter</a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Aufgaben.php">Aufgaben</a>
-                    </li>
-                    <li class="list-group-item" style="width: 70%; margin-left: auto;text-align: center ">
-                        <a href="Personen.php">Mitglieder</a>
-                    </li>
-                </ul>
-            </nav>
+            <?php include ('navbar.php')?>
         </div>
         <?php include("todosArray.php"); ?>
         <div class="col">
@@ -61,9 +54,9 @@
                 <div class="card">
                     <div class="card-header">ToDo</div>
                     <div class="list-group">
-                        <li class="list-group-item">Webentwicklung Vorlesung</li>
-                        <li class="list-group-item">Datenbanken Übung</li>
-                        <li class="list-group-item">Datenbanken Vorlesung</li>
+                        <li class="list-group-item"> <?php echo ($todos[0]['bezeichnung'])?> </li>
+                        <li class="list-group-item"><?php echo ($todos[1]['bezeichnung'])?></li>
+                        <li class="list-group-item"><?php echo ($todos[2]['bezeichnung'])?></li>
                     </div>
                 </div>
                 <div class="card">
