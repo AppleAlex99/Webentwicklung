@@ -1,7 +1,7 @@
 <?php
 $aufgaben = array(
 // Erzeuge den ersten Array und speichere einige Werte darin
-    array(
+    0 => array(
         'id' => 1,
         'bezeichnung' => 'HTML-Datei',
         'beschreibung' => 'HTML-Datei erstellen',
@@ -10,14 +10,14 @@ $aufgaben = array(
     ),
 // Erzeuge den zweiten Array und speichere einige Werte darin
 
-    array(
+    1 => array(
         'id' => 2,
         'bezeichnung' => 'CSS',
         'beschreibung' => 'CSS-Datei erstellen',
         'reiter' => 'ToDo',
         'zustaendig' => 'Alexander Winzig'
     ),
-    array(
+    2 => array(
         'id' => 3,
         'bezeichnung' => 'Datenbanksysteme',
         'beschreibung' => 'Datenbanksysteme Übung 4 bearbeiten',
@@ -26,7 +26,7 @@ $aufgaben = array(
     ),
 );
 
-var_dump($aufgaben)
+#var_dump($aufgaben)
 
 
 ?>

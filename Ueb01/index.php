@@ -22,7 +22,6 @@
 </div>
 
 
-
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
@@ -55,8 +54,8 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
+        <?php include("todosArray.php"); ?>
         <div class="col">
             <div class="card-deck">
                 <div class="card">

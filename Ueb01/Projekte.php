@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <title>Projekte</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
     <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -55,16 +60,16 @@
 
 
             <form>
-            <div class="form-group">
-                <label for="sel1">Projekt auswählen</label>
-                <select class="form-control" id="sel1">
-                    <option>-bitte auswählen-</option>
-                    <option>Webentwicklung</option>
-                    <option>Datenbanksysteme</option>
-                    <option>sport</option>
-                    <option>pause</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <label for="sel1">Projekt auswählen</label>
+                    <select class="form-control" id="sel1">
+                        <option>-bitte auswählen-</option>
+                        <option>Webentwicklung</option>
+                        <option>Datenbanksysteme</option>
+                        <option>sport</option>
+                        <option>pause</option>
+                    </select>
+                </div>
                 <button class="btn btn-primary" type="submit">Auswählen</button>
                 <button class="btn btn-primary" type="submit">Bearbeiten</button>
                 <button class="btn btn-danger" type="submit">Löschen</button>
@@ -74,17 +79,16 @@
             <br>
             <h3>Neues Projekt anlegen</h3>
             <form>
-            <div class="form-group">
-                <label for="projektname">Projektname</label>
-                <input type="text" class="form-control" id="projektname">
-                <br>
-                <label for="beschreibung">Projektbeschreibung</label>
-                <textarea class="form-control" rows="5" id="beschreibung"></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="projektname">Projektname</label>
+                    <input type="text" class="form-control" id="projektname">
+                    <br>
+                    <label for="beschreibung">Projektbeschreibung</label>
+                    <textarea class="form-control" rows="5" id="beschreibung"></textarea>
+                </div>
                 <button class="btn btn-primary" type="submit">Speichern</button>
                 <button class="btn btn-success" type="submit">Reset</button>
             </form>
-
 
 
         </div>

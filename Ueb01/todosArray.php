@@ -1,24 +1,24 @@
 <?php
 $todos = array(
 // Erzeuge den ersten Array und speichere einige Werte darin
-    array(
+    0 => array(
         'id' => 1,
         'bezeichnung' => 'Webentwicklung Vorlesung'
     ),
 // Erzeuge den zweiten Array und speichere einige Werte darin
 
-    array(
+    1 => array(
         'id' => 2,
         'bezeichnung' => 'Datenbanken Übung'
     ),
 
-    array(
+    2 => array(
         'id' => 3,
         'bezeichnung' => 'Datenbanken Vorlesung'
     ),
 );
 
-var_dump($todos)
+#var_dump($todos)
 
 
 ?>

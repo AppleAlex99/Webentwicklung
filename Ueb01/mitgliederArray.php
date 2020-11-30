@@ -1,23 +1,27 @@
 <?php
 $mitglieder = array(
-// Erzeuge den ersten Array und speichere einige Werte darin
-    array(
+    0 => array(
         'id' => 1,
-        'username' => 'kalenborn',
+        'name' => 'Axel Kalenborn',
         'email' => 'kalenborn@example.com',
         'projektID' => 1
     ),
-// Erzeuge den zweiten Array und speichere einige Werte darin
-
-    array(
+    1 => array(
         'id' => 2,
-        'username' => 'elena',
+        'name' => 'Elena WieAuchImmer',
         'email' => 'elena@example.com',
         'projektID' => 1
+    ),
+    2 => array(
+        'id' => 3,
+        'name' => 'Alexander Winzig',
+        'email' => 's4alwinz@uni-trier.de',
+        'projektID' => 2
     )
 );
 
-var_dump($mitglieder)
+#var_dump($mitglieder)
+
 
 
 ?>
