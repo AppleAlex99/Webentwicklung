@@ -28,8 +28,6 @@
             <?php include ('navbar.php')?>
         </div>
         <div class="col">
-
-
             <form>
                 <div class="form-group">
                     <label for="sel1">Projekt auswählen</label>

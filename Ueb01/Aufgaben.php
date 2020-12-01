@@ -57,9 +57,7 @@ $aufgaben = array(
             <?php include ('navbar.php')?>
         </div>
 
-        <?php include("aufgabenArray.php"); ?>
         <div class="col">
-
             <table class="table">
                 <thead class="thead-light">
                 <tr>

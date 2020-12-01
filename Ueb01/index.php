@@ -48,7 +48,6 @@ $todos = array(
         <div class="col col-2">
             <?php include ('navbar.php')?>
         </div>
-        <?php include("todosArray.php"); ?>
         <div class="col">
             <div class="card-deck">
                 <div class="card">
