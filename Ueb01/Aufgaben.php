@@ -22,7 +22,7 @@
 <?php
 $aufgaben = array(
     0 => array(
-        'id' => 1,
+        'id' => 0,
         'bezeichnung' => 'HTML-Datei',
         'beschreibung' => 'HTML-Datei erstellen',
         'reiter' => 'ToDo',
@@ -30,21 +30,20 @@ $aufgaben = array(
     ),
 
     1 => array(
-        'id' => 2,
+        'id' => 1,
         'bezeichnung' => 'CSS',
         'beschreibung' => 'CSS-Datei erstellen',
         'reiter' => 'ToDo',
         'zustaendig' => 'Alexander Winzig'
     ),
     2 => array(
-        'id' => 3,
+        'id' => 2,
         'bezeichnung' => 'Datenbanksysteme',
         'beschreibung' => 'Datenbanksysteme Übung 4 bearbeiten',
         'reiter' => 'Must do',
         'zustaendig' => 'Alexander Winzig'
     ),
 );
-#var_dump($aufgaben)
 ?>
 
 <div class="jumbotron text-center">
@@ -54,7 +53,7 @@ $aufgaben = array(
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-            <?php include ('navbar.php')?>
+            <?php include('navbar.php') ?>
         </div>
 
         <div class="col">
@@ -70,10 +69,34 @@ $aufgaben = array(
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"> <?php echo ($aufgaben[0]['bezeichnung']) ?> </th>
-                    <td> <?php echo ($aufgaben[0]['beschreibung']) ?> </td>
-                    <td> <?php echo ($aufgaben[0]['reiter']) ?> </td>
-                    <td> <?php echo ($aufgaben[0]['zustaendig']) ?> </td>
+                    <th scope="row"> <?php
+                        if (($aufgaben[0]['bezeichnung']) != null) {
+                            echo($aufgaben[0]['bezeichnung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </th>
+                    <td> <?php
+                        if (($aufgaben[0]['beschreibung']) != null) {
+                            echo($aufgaben[0]['beschreibung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[0]['reiter']) != null) {
+                            echo($aufgaben[0]['reiter']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[0]['zustaendig']) != null) {
+                            echo($aufgaben[0]['zustaendig']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -91,10 +114,34 @@ $aufgaben = array(
 
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo ($aufgaben[1]['bezeichnung']) ?> </th>
-                    <td> <?php echo ($aufgaben[1]['beschreibung']) ?> </td>
-                    <td> <?php echo ($aufgaben[1]['reiter']) ?> </td>
-                    <td> <?php echo ($aufgaben[1]['zustaendig']) ?> </td>
+                    <th scope="row"> <?php
+                        if (($aufgaben[1]['bezeichnung']) != null) {
+                            echo($aufgaben[1]['bezeichnung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </th>
+                    <td> <?php
+                        if (($aufgaben[1]['beschreibung']) != null) {
+                            echo($aufgaben[1]['beschreibung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[1]['reiter']) != null) {
+                            echo($aufgaben[1]['reiter']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[1]['zustaendig']) != null) {
+                            echo($aufgaben[1]['zustaendig']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -111,10 +158,35 @@ $aufgaben = array(
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo ($aufgaben[2]['bezeichnung']) ?> </th>
-                    <td> <?php echo ($aufgaben[2]['beschreibung']) ?> </td>
-                    <td> <?php echo ($aufgaben[2]['reiter']) ?> </td>
-                    <td> <?php echo ($aufgaben[2]['zustaendig']) ?> </td>
+
+                    <th scope="row"> <?php
+                        if (($aufgaben[2]['bezeichnung']) != null) {
+                            echo($aufgaben[2]['bezeichnung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </th>
+                    <td> <?php
+                        if (($aufgaben[2]['beschreibung']) != null) {
+                            echo($aufgaben[2]['beschreibung']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[2]['reiter']) != null) {
+                            echo($aufgaben[2]['reiter']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
+                    <td> <?php
+                        if (($aufgaben[2]['zustaendig']) != null) {
+                            echo($aufgaben[2]['zustaendig']);
+                        } else {
+                            echo "Wert ist nicht gesetzt!";
+                        }
+                        ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">

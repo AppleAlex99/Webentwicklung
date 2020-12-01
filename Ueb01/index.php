@@ -18,25 +18,6 @@
 </head>
 <body>
 
-<?php
-$todos = array(
-    0 => array(
-        'id' => 1,
-        'bezeichnung' => 'Webentwicklung Vorlesung'
-    ),
-
-    1 => array(
-        'id' => 2,
-        'bezeichnung' => 'Datenbanken Übung'
-    ),
-
-    2 => array(
-        'id' => 3,
-        'bezeichnung' => 'Datenbanken Vorlesung'
-    ),
-);
-#var_dump($todos)
-?>
 
 <div class="jumbotron text-center">
     <h1 class="display-4">Aufgabenplaner: Todos(Aktuelles Projekt)</h1>
@@ -53,9 +34,9 @@ $todos = array(
                 <div class="card">
                     <div class="card-header">ToDo</div>
                     <div class="list-group">
-                        <li class="list-group-item"> <?php echo ($todos[0]['bezeichnung'])?> </li>
-                        <li class="list-group-item"><?php echo ($todos[1]['bezeichnung'])?></li>
-                        <li class="list-group-item"><?php echo ($todos[2]['bezeichnung'])?></li>
+                        <li class="list-group-item"> Übung bearbeiten </li>
+                        <li class="list-group-item"> Webentwicklung machen </li>
+                        <li class="list-group-item"> Vorlesung DBS anhören </li>
                     </div>
                 </div>
                 <div class="card">
