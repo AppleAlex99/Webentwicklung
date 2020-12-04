@@ -69,34 +69,10 @@ $aufgaben = array(
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"> <?php
-                        if (($aufgaben[0]['bezeichnung']) != null) {
-                            echo($aufgaben[0]['bezeichnung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </th>
-                    <td> <?php
-                        if (($aufgaben[0]['beschreibung']) != null) {
-                            echo($aufgaben[0]['beschreibung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[0]['reiter']) != null) {
-                            echo($aufgaben[0]['reiter']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[0]['zustaendig']) != null) {
-                            echo($aufgaben[0]['zustaendig']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[0]['bezeichnung']); ?> </th>
+                    <td> <?php echo($aufgaben[0]['beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[0]['reiter']); ?> </td>
+                    <td> <?php echo($aufgaben[0]['zustaendig']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -114,34 +90,10 @@ $aufgaben = array(
 
                 </tr>
                 <tr>
-                    <th scope="row"> <?php
-                        if (($aufgaben[1]['bezeichnung']) != null) {
-                            echo($aufgaben[1]['bezeichnung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </th>
-                    <td> <?php
-                        if (($aufgaben[1]['beschreibung']) != null) {
-                            echo($aufgaben[1]['beschreibung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[1]['reiter']) != null) {
-                            echo($aufgaben[1]['reiter']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[1]['zustaendig']) != null) {
-                            echo($aufgaben[1]['zustaendig']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[1]['bezeichnung']); ?> </th>
+                    <td> <?php echo($aufgaben[1]['beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[1]['reiter']); ?> </td>
+                    <td> <?php echo($aufgaben[1]['zustaendig']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -159,34 +111,10 @@ $aufgaben = array(
                 </tr>
                 <tr>
 
-                    <th scope="row"> <?php
-                        if (($aufgaben[2]['bezeichnung']) != null) {
-                            echo($aufgaben[2]['bezeichnung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </th>
-                    <td> <?php
-                        if (($aufgaben[2]['beschreibung']) != null) {
-                            echo($aufgaben[2]['beschreibung']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[2]['reiter']) != null) {
-                            echo($aufgaben[2]['reiter']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
-                    <td> <?php
-                        if (($aufgaben[2]['zustaendig']) != null) {
-                            echo($aufgaben[2]['zustaendig']);
-                        } else {
-                            echo "Wert ist nicht gesetzt!";
-                        }
-                        ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[2]['bezeichnung']); ?> </th>
+                    <td> <?php echo($aufgaben[2]['beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[2]['reiter']); ?> </td>
+                    <td> <?php echo($aufgaben[2]['zustaendig']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -240,6 +168,17 @@ $aufgaben = array(
 
 </body>
 <footer>
-
+    <?php
+    if (isset($aufgaben)) {
+        foreach ($aufgaben as $aufgabe) {
+            echo 'Die ID ist: ' . ($aufgabe['id']) . "<br>" .
+                'Die Aufgabe lautet: ' . ($aufgabe['bezeichnung']) . "<br>" .
+                'Die Beschreibung ist: ' . ($aufgabe['beschreibung']) . "<br>" .
+                'Der Reiter: ' . ($aufgabe['reiter']) . "<br>" .
+                'Zu bearbeiten von: ' . ($aufgabe['zustaendig']) . "<br>" .
+                "<br>" . "<br>";
+        }
+    }
+    ?>
 </footer>
 </html>

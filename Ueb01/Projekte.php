@@ -67,17 +67,21 @@ $projekte = array(
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-            <?php include ('navbar.php')?>
+            <?php include('navbar.php') ?>
         </div>
         <div class="col">
             <form>
                 <div class="form-group">
                     <label for="sel1">Projekt auswählen</label>
                     <select class="form-control" id="sel1">
-<!-- mit foreach-schleife durch das array iteriert -->
-                        <?php foreach ($projekte as $projekt){?>
-                            <option> <?php echo ($projekt['bezeichnung'].'<br>');?>
-                        <?php }?>
+                        <!-- mit foreach-schleife durch das array iteriert und test ob existiert-->
+                        <?php
+                        if (isset($projekte)){
+                        foreach ($projekte as $projekt){
+                        ?>
+                        <option> <?php echo($projekt['bezeichnung'] . '<br>'); ?>
+                            <?php }
+                            } ?>
 
 
                     </select>

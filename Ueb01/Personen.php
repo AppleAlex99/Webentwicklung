@@ -50,8 +50,8 @@ $mitglieder = array(
 <div class="container-fluid">
     <div class="row">
         <div class="col col-2">
-            <?php include ('navbar.php')?>
-            </div>
+            <?php include('navbar.php') ?>
+        </div>
 
 
         <div class="col">
@@ -66,8 +66,8 @@ $mitglieder = array(
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"> <?php echo ($mitglieder[0]['name'])?> </th>
-                    <td> <?php echo ($mitglieder[0]['email'])?> </td>
+                    <th scope="row"> <?php echo($mitglieder[0]['name']) ?> </th>
+                    <td> <?php echo($mitglieder[0]['email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -92,8 +92,8 @@ $mitglieder = array(
 
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo ($mitglieder[1]['name'])?> </th>
-                    <td> <?php echo ($mitglieder[1]['email'])?> </td>
+                    <th scope="row"> <?php echo($mitglieder[1]['name']) ?> </th>
+                    <td> <?php echo($mitglieder[1]['email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -117,8 +117,8 @@ $mitglieder = array(
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo ($mitglieder[2]['name'])?> </th>
-                    <td> <?php echo ($mitglieder[2]['email'])?> </td>
+                    <th scope="row"> <?php echo($mitglieder[2]['name']) ?> </th>
+                    <td> <?php echo($mitglieder[2]['email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -167,12 +167,20 @@ $mitglieder = array(
                 <button class="btn btn-primary" type="submit">Speichern</button>
                 <button class="btn btn-success" type="submit">Reset</button>
             </form>
-
-
         </div>
-
+    </div>
 </body>
 <footer>
-
+    <?php
+    if (isset($mitglieder)) {
+        foreach ($mitglieder as $mitglied) {
+            echo 'Die Personen-ID ist: ' . ($mitglied['id']) . "<br>" .
+                'Der Name der Person: ' . ($mitglied['name']) . "<br>" .
+                'Die E-Mail-Adresse ist: ' . ($mitglied['email']) . "<br>" .
+                'Die Projekt-ID: ' . ($mitglied['projektID']) . "<br>" .
+                "<br>" . "<br>";
+        }
+    }
+    ?>
 </footer>
 </html>
