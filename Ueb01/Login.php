@@ -64,6 +64,29 @@
     }
 </script>
 
+    <?php
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $db = "Webentwicklung";
+
+    $conn = new mysqli($host, $username, $password, $db);
+
+    if($conn->connect_error){
+        die("Keine Verbindung zur Datenbank ". $db ."möglich");
+    }else{
+        $sql = "SELECT * FROM Mitglieder";
+        $result = $conn->query($sql);
+        echo ('<ol>');
+            if($result->num_rows > 0){
+                while($row = $result->fetch_assoc()){
+                    echo ('<li> '. $row['ID'] . ' ' . $row['Benutzername'] . ' ' . $row['Email']);
+                }
+            }
+            echo ('</ol>');
+    }
+
+    ?>
 
 </body>
 <footer>
