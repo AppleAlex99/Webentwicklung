@@ -64,6 +64,7 @@
     }
 </script>
 
+<!-- Da die letzte Aufgabe bei mir auf dem Mac nicht funktioniert hat, hier eine Anfragen auf der WebentwicklungsDB
     <?php
     $host = "localhost";
     $username = "root";
@@ -80,12 +81,11 @@
         echo ('<ol>');
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
-                    echo ('<li> '. $row['ID'] . ' ' . $row['Benutzername'] . ' ' . $row['Email']);
+                    echo ('<li> '. $row['ID'] . ' ' . $row['Benutzername'] . ' ' . $row['Email'] . ' ' . $row['Passwort']);
                 }
             }
             echo ('</ol>');
     }
-
     ?>
 
 </body>
