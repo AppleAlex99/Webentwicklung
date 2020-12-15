@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Added all Views and Controller to the project.&#10;Finished Aufgabe 1">
-      <change beforePath="$PROJECT_DIR$/.idea/Webentwicklung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Webentwicklung.iml" afterDir="false" />
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Finished Aufgabe 1, added Directory for Views">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/AufgabenViews/Aufgaben.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/LoginViews/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/PersonenViews/Personen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ProjekteViews/Projekte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ReiterViews/Reiter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/aktProViews/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/aktProViews/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/aktProViews/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
       <workItem from="1607962442482" duration="613000" />
       <workItem from="1608028123633" duration="1506000" />
       <workItem from="1608031523201" duration="5213000" />
-      <workItem from="1608050531603" duration="1950000" />
+      <workItem from="1608050531603" duration="3012000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -95,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608037113732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished Aufgabe 1, added Directory for Views">
+      <created>1608052540963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608052540963</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +117,7 @@
     <MESSAGE value="test windows auf mac in index.php &quot;lol&quot;" />
     <MESSAGE value="Added Codeigniter-Framework to project" />
     <MESSAGE value="Added all Views and Controller to the project.&#10;Finished Aufgabe 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all Views and Controller to the project.&#10;Finished Aufgabe 1" />
+    <MESSAGE value="Finished Aufgabe 1, added Directory for Views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Aufgabe 1, added Directory for Views" />
   </component>
 </project>

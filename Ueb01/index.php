@@ -35,7 +35,7 @@
                 <div class="card">
                     <div class="card-header">ToDo</div>
                     <div class="list-group">
-                        <li class="list-group-item"> Übung bearbeiten </li>
+                        <li class="list-group-item"> Übung bearbeite </li>
                         <li class="list-group-item"> Webentwicklung machen </li>
                         <li class="list-group-item"> Vorlesung DBS anhören </li>
                     </div>
