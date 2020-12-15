@@ -4,6 +4,6 @@
 class Aufgaben extends BaseController
 {
     public function index(){
-        return view('Aufgaben');
+        echo view('Aufgaben');
     }
 }

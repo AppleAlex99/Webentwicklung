@@ -37,7 +37,7 @@ $aufgaben = array(
 ?>
 
 <div class="jumbotron text-center">
-    <h1 class="display-4">Aufgabenplaner: Aufgaben</h1>
+    <h1 class="display-4">Aufgabenplaner: Aufgabe</h1>
 </div>
 
 <div class="container-fluid">

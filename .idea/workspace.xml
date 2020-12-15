@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="test windows auf mac in index.php &quot;lol&quot;">
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/AufgabenViews/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/LoginViews/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/PersonenViews/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ProjekteViews/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ReiterViews/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/aktProViews/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Alten Stand wieder herrgestellt, Ab hier weiter machen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\testAufgaben" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ReiterViews" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ProjekteViews" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\PersonenViews" />
-      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\aktProViews" />
-      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\AufgabenViews" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -100,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608052540963</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Alten Stand wieder herrgestellt, Ab hier weiter machen">
+      <created>1608055679208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608055679208</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +135,7 @@
     <MESSAGE value="Added Codeigniter-Framework to project" />
     <MESSAGE value="Added all Views and Controller to the project.&#10;Finished Aufgabe 1" />
     <MESSAGE value="Finished Aufgabe 1, added Directory for Views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Aufgabe 1, added Directory for Views" />
+    <MESSAGE value="Alten Stand wieder herrgestellt, Ab hier weiter machen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alten Stand wieder herrgestellt, Ab hier weiter machen" />
   </component>
 </project>

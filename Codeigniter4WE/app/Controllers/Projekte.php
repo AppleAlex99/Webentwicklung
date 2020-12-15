@@ -4,6 +4,6 @@
 class Projekte extends BaseController
 {
     public function index(){
-        return view('Projekte');
+        echo view('Projekte');
     }
 }

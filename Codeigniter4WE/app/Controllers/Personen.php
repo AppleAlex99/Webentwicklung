@@ -3,7 +3,15 @@
 
 class Personen extends BaseController
 {
-    public function index(){
-        return view('Personen');
+    public function index()
+    {
+        $data['hw'] = 'Hello World';
+        echo view('Personen', $data);
     }
+
+
+
+
+
+
 }

@@ -34,7 +34,7 @@ $mitglieder = array(
 ?>
 
 <div class="jumbotron text-center">
-    <h1 class="display-4">Aufgabenplaner: Personen</h1>
+    <h1 class="display-4"> <?php echo $hw?></h1>
 </div>
 
 <div class="container-fluid">
@@ -173,7 +173,9 @@ $mitglieder = array(
     }
     ?>
 
-    <?php include('templates/footer.php') ?>
+    <?php include('templates/footer.php'); ?>
+
+
 
 </footer>
 </html>
