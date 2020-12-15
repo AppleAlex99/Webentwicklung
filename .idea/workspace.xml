@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Added Codeigniter-Framework to project">
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/public/css/styles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Added all Views and Controller to the project.&#10;Finished Aufgabe 1">
+      <change beforePath="$PROJECT_DIR$/.idea/Webentwicklung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Webentwicklung.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/welcome_message.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/AufgabenViews/Aufgaben.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/LoginViews/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/PersonenViews/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ProjekteViews/Projekte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/ReiterViews/Reiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/aktProViews/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Codeigniter4WE/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -64,7 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\templates" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ReiterViews" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ProjekteViews" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\PersonenViews" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\aktProViews" />
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\AufgabenViews" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,7 +71,8 @@
       <workItem from="1607960984449" duration="1018000" />
       <workItem from="1607962442482" duration="613000" />
       <workItem from="1608028123633" duration="1506000" />
-      <workItem from="1608031523201" duration="5017000" />
+      <workItem from="1608031523201" duration="5213000" />
+      <workItem from="1608050531603" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -94,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608032889493</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added all Views and Controller to the project.&#10;Finished Aufgabe 1">
+      <created>1608037113732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608037113732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test windows auf mac in index.php &quot;lol&quot;" />
     <MESSAGE value="Added Codeigniter-Framework to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Codeigniter-Framework to project" />
+    <MESSAGE value="Added all Views and Controller to the project.&#10;Finished Aufgabe 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all Views and Controller to the project.&#10;Finished Aufgabe 1" />
   </component>
 </project>
