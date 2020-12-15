@@ -7,6 +7,10 @@
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/Codeigniter4WE/app/Config/Database.php" />
+            <excludedPath local="true" path="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

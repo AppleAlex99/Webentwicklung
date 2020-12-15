@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="test windows auf mac in index.php &quot;lol&quot;" />
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Added Codeigniter-Framework to project">
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/public/css/styles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/welcome_message.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +31,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,7 +52,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Codeigniter4WE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Codeigniter4WE/app/Config/App.php" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -31,6 +61,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\templates" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,7 +78,7 @@
       <workItem from="1607960984449" duration="1018000" />
       <workItem from="1607962442482" duration="613000" />
       <workItem from="1608028123633" duration="1506000" />
-      <workItem from="1608031523201" duration="998000" />
+      <workItem from="1608031523201" duration="5017000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -52,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607961880161</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Codeigniter-Framework to project">
+      <created>1608032889493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608032889493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test windows auf mac in index.php &quot;lol&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="test windows auf mac in index.php &quot;lol&quot;" />
+    <MESSAGE value="Added Codeigniter-Framework to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Codeigniter-Framework to project" />
   </component>
 </project>
