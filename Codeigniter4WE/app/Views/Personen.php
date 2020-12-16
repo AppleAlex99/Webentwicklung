@@ -9,32 +9,8 @@
 </head>
 <body>
 
-<?php
-$mitglieder = array(
-    0 => array(
-        'id' => 0,
-        'name' => 'Axel Kalenborn',
-        'email' => 'kalenborn@example.com',
-        'projektID' => 1
-    ),
-    1 => array(
-        'id' => 1,
-        'name' => 'Elena',
-        'email' => 'elena@example.com',
-        'projektID' => 1
-    ),
-    2 => array(
-        'id' => 2,
-        'name' => 'Alexander Winzig',
-        'email' => 's4alwinz@uni-trier.de',
-        'projektID' => 2
-    )
-);
-#var_dump($mitglieder)
-?>
-
 <div class="jumbotron text-center">
-    <h1 class="display-4"> <?php echo $hw?></h1>
+    <h1 class="display-4">Aufgabenplaner: Personen</h1>
 </div>
 
 <div class="container-fluid">

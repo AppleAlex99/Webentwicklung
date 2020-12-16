@@ -9,33 +9,6 @@
 </head>
 <body>
 
-<?php
-$aufgaben = array(
-    0 => array(
-        'id' => 0,
-        'bezeichnung' => 'HTML-Datei',
-        'beschreibung' => 'HTML-Datei erstellen',
-        'reiter' => 'ToDo',
-        'zustaendig' => 'Alexander Winzig'
-    ),
-
-    1 => array(
-        'id' => 1,
-        'bezeichnung' => 'CSS',
-        'beschreibung' => 'CSS-Datei erstellen',
-        'reiter' => 'ToDo',
-        'zustaendig' => 'Alexander Winzig'
-    ),
-    2 => array(
-        'id' => 2,
-        'bezeichnung' => 'Datenbanksysteme',
-        'beschreibung' => 'Datenbanksysteme Übung 4 bearbeiten',
-        'reiter' => 'Must do',
-        'zustaendig' => 'Alexander Winzig'
-    ),
-);
-?>
-
 <div class="jumbotron text-center">
     <h1 class="display-4">Aufgabenplaner: Aufgaben</h1>
 </div>
