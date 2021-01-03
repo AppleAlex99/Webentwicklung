@@ -22,10 +22,10 @@
             <form>
                 <div class="form-group">
                     <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="text" class="form-control" id="email" name="email">
                     <br>
                     <label for="passwort">Passwort</label>
-                    <input type="password" class="form-control" id="passwort">
+                    <input type="password" class="form-control" id="passwort" name="passwort">
 
                 </div>
 
