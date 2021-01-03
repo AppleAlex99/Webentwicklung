@@ -33,6 +33,14 @@ class Personen extends BaseController
         $data['hw'] = 'Hello World';
         echo view('Personen', $data);
     }
+
+    public function personenTable(){
+        $mymodel = new PersonenModel();
+        $data['mitglieder'] = $mymodel->getData();
+
+        echo view('Personen', $data);
+    }
+
 }
 
 

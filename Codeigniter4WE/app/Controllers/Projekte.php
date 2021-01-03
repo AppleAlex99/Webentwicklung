@@ -1,5 +1,6 @@
 <?php namespace App\Controllers;
 
+use App\Models\PersonenModel;
 use CodeIgniter\Controller;
 use App\Models\ProjekteModel;
 
@@ -48,6 +49,13 @@ class Projekte extends BaseController
             ),
         );
 
+
+        echo view('Projekte', $data);
+    }
+
+    public function projekteTable(){
+        $mymodel = new PersonenModel();
+        $data['projekte'] = $mymodel->getData();
 
         echo view('Projekte', $data);
     }

@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 
+use App\Models\PersonenModel;
 use CodeIgniter\Controller;
 use App\Models\ToDosModel;
 
@@ -36,5 +37,12 @@ class ToDos extends BaseController
 
 
         echo view('index', $data);
+    }
+
+    public function todosTable(){
+        $mymodel = new PersonenModel();
+        $data['todos'] = $mymodel->getData();
+
+        echo view('ToDos', $data);
     }
 }

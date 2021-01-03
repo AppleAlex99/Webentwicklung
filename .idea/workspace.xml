@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Für A6 die Model für jeden Controller geaddet">
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/AufgabenModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/LoginModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ReiterModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ToDosModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

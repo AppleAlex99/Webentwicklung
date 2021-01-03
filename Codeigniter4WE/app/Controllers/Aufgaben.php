@@ -1,5 +1,6 @@
 <?php namespace App\Controllers;
 
+use App\Models\PersonenModel;
 use CodeIgniter\Controller;
 use App\Models\AufgabenModel;
 
@@ -31,6 +32,13 @@ class Aufgaben extends BaseController
                 'zustaendig' => 'Alexander Winzig'
             ),
         );
+
+        echo view('Aufgaben', $data);
+    }
+
+    public function aufgabenTable(){
+        $mymodel = new PersonenModel();
+        $data['aufgaben'] = $mymodel->getData();
 
         echo view('Aufgaben', $data);
     }
