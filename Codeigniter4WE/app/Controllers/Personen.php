@@ -1,5 +1,8 @@
 <?php namespace App\Controllers;
 
+use CodeIgniter\Controller;
+use App\Models\PersonenModel;
+
 
 class Personen extends BaseController
 {
@@ -30,9 +33,6 @@ class Personen extends BaseController
         $data['hw'] = 'Hello World';
         echo view('Personen', $data);
     }
-
-
-
 }
 
 

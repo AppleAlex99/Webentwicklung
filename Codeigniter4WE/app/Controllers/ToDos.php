@@ -1,6 +1,9 @@
 <?php namespace App\Controllers;
 
 
+use CodeIgniter\Controller;
+use App\Models\ToDosModel;
+
 class ToDos extends BaseController
 {
     public function index(){

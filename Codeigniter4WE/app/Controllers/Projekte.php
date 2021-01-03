@@ -1,5 +1,7 @@
 <?php namespace App\Controllers;
 
+use CodeIgniter\Controller;
+use App\Models\ProjekteModel;
 
 class Projekte extends BaseController
 {
