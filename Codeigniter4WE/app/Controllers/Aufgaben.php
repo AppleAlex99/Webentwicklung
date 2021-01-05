@@ -32,8 +32,10 @@ class Aufgaben extends BaseController
                 'zustaendig' => 'Alexander Winzig'
             ),
         );
-
+        echo view('templates/header.php');
         echo view('Aufgaben', $data);
+        echo view('templates/footer');
+
     }
 
     public function aufgabenTable(){

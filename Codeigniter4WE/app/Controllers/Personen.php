@@ -29,9 +29,9 @@ class Personen extends BaseController
             )
         );
 #var_dump($mitglieder)
-
-        $data['hw'] = 'Hello World';
+        echo view('templates/header.php');
         echo view('Personen', $data);
+        echo view('templates/footer');
     }
 
     public function personenTable(){

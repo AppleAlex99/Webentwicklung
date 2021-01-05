@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Aufgaben</title>
-
-    <?php include('css/styles.php') ?>
-
 </head>
 <body>
 
@@ -143,6 +140,5 @@
         }
     }
     ?>
-    <?php include('templates/footer.php') ?>
 </footer>
 </html>

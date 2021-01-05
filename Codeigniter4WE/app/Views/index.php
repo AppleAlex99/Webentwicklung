@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>ToDo Liste</title>
-
-    <?php include('css/styles.php') ?>
-
 <body>
 
 
@@ -52,6 +49,6 @@
 
 </body>
 <footer>
-    <?php include('templates/footer.php') ?>
+
 </footer>
 </html>

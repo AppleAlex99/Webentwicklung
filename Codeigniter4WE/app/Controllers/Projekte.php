@@ -48,9 +48,10 @@ class Projekte extends BaseController
                 'beschreibung' => 'Zwischenberichtstruktur an Herrn Kalenborn senden und absegnen lassen.'
             ),
         );
-
-
+        echo view('templates/header.php');
         echo view('Projekte', $data);
+        echo view('templates/footer');
+
     }
 
     public function projekteTable(){
@@ -58,5 +59,6 @@ class Projekte extends BaseController
         $data['projekte'] = $mymodel->getData();
 
         echo view('Projekte', $data);
+
     }
 }

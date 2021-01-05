@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Controller ergänzt">
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="login controller hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +80,11 @@
       <workItem from="1608028123633" duration="1506000" />
       <workItem from="1608031523201" duration="5213000" />
       <workItem from="1608050531603" duration="3012000" />
-      <workItem from="1609686728259" duration="1245000" />
+      <workItem from="1609686728259" duration="1282000" />
+      <workItem from="1609780950516" duration="4440000" />
+      <workItem from="1609842783025" duration="145000" />
+      <workItem from="1609843318468" duration="899000" />
+      <workItem from="1609846088851" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -119,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609685708804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="login controller hinzugefügt">
+      <created>1609688014290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609688014290</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +168,7 @@
     <MESSAGE value="Alten Stand wieder herrgestellt, Ab hier weiter machen" />
     <MESSAGE value="aktueller Stand update!!!" />
     <MESSAGE value="Controller ergänzt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller ergänzt" />
+    <MESSAGE value="login controller hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="login controller hinzugefügt" />
   </component>
 </project>

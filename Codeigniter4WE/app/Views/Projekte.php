@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Projekte</title>
-
-    <?php include('css/styles.php') ?>
 </head>
 <body>
 
@@ -25,9 +23,7 @@
                         <!-- mit foreach-schleife durch das array iteriert und test ob existiert-->
                         <?php
                         if (isset($projekte)){
-                        foreach ($projekte
-
-                        as $projekt){
+                        foreach ($projekte as $projekt){
                         ?>
                         <option> <?php echo($projekt['bezeichnung'] . '<br>'); ?>
                             <?php }
@@ -63,6 +59,5 @@
 
 </body>
 <footer>
-    <?php include('templates/footer.php') ?>
 </footer>
 </html>

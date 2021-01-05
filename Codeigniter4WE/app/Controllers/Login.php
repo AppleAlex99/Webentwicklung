@@ -22,6 +22,8 @@ class Login extends BaseController
                 }
             }
         }
+        echo view('templates/header.php');
         echo view('Login');
+        echo view('templates/footer');
     }
 }

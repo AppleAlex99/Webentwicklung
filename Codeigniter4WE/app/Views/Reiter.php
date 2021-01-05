@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Reiter</title>
-
-    <?php include('css/styles.php') ?>
 </head>
 <body>
 
@@ -110,6 +108,6 @@
 <i class="fa fa-pencil-square-o"></i>
 </body>
 <footer>
-    <?php include('templates/footer.php') ?>
+
 </footer>
 </html>

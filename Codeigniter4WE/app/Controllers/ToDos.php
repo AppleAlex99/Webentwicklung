@@ -34,9 +34,10 @@ class ToDos extends BaseController
                 'wert1' => 'PS5-Vorbestellung',
             ),
         );
-
-
+        echo view('templates/header.php');
         echo view('index', $data);
+        echo view('templates/footer');
+
     }
 
     public function todosTable(){

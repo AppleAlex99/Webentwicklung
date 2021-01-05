@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-
-    <?php include('css/styles.php') ?>
-
 </head>
 <body>
 <div class="jumbotron text-center">
@@ -54,11 +51,11 @@
     }
 </script>
 
-<!-- Da die letzte Aufgabe bei mir auf dem Mac nicht funktioniert hat, hier eine Anfragen auf der WebentwicklungsDB
+<!-- Da die letzte Aufgabe bei mir auf dem Mac nicht funktioniert hat, hier eine Anfragen auf der WebentwicklungsDB-->
 
 
 </body>
 <footer>
-    <?php include('templates/footer.php') ?>
+
 </footer>
 </html>
