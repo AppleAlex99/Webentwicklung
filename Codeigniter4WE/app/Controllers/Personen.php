@@ -2,48 +2,39 @@
 
 use CodeIgniter\Controller;
 use App\Models\PersonenModel;
+use Psr\Log\NullLogger;
 
 
 class Personen extends BaseController
 {
+    /*
+    public function __construct(){
+        if (session()->get('loggedin') == NULL){
+            header('Location: '.base_url() . '/Webentwicklung/Codeigniter4WE/public/Personen');
+            exit();
+        }
+    }
+    */
+
     public function index()
     {
-        $data['mitglieder'] = array(
-            0 => array(
-                'id' => 0,
-                'name' => 'Axel Kalenborn',
-                'email' => 'kalenborn@example.com',
-                'projektID' => 1
-            ),
-            1 => array(
-                'id' => 1,
-                'name' => 'Elena',
-                'email' => 'elena@example.com',
-                'projektID' => 1
-            ),
-            2 => array(
-                'id' => 2,
-                'name' => 'Alexander Winzig',
-                'email' => 's4alwinz@uni-trier.de',
-                'projektID' => 2
-            )
-        );
-#var_dump($mitglieder)
+        $mymodel = new PersonenModel();
+        $data['mitglieder'] = $mymodel->getData();
+
         echo view('templates/header.php');
         echo view('Personen', $data);
         echo view('templates/footer');
     }
 
-    public function personenTable(){
-        $mymodel = new PersonenModel();
-        $data['mitglieder'] = $mymodel->getData();
+    public function sessionPruefen()
+    {
 
-        echo view('Personen', $data);
+        if (!$this->session->get('loggedin')) {
+            return redirect()->to(base_url() . '/Webentwicklung');
+        } else {
+            echo view('templates/header');
+            echo view('Personen');
+            echo view('templates/footer');
+        }
     }
-
 }
-
-
-
-
-?>

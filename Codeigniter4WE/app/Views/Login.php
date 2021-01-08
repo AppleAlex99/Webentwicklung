@@ -16,14 +16,13 @@
             <?php include('templates/navbar.php') ?>
         </div>
         <div class="col">
-            <form>
+            <?= form_open('login/index') ?>
                 <div class="form-group">
                     <label for="email">E-Mail</label>
                     <input type="text" class="form-control" id="email" name="email">
                     <br>
                     <label for="passwort">Passwort</label>
                     <input type="password" class="form-control" id="passwort" name="passwort">
-
                 </div>
 
                 <div class="form-check">
@@ -34,13 +33,11 @@
                 </div>
                 <br>
 
-                <button type="submit" class="btn btn-primary">Einloggen</button>
+                <button id="btnsubmit" type="submit" class="btn btn-primary">Einloggen</button>
                 <br>
                 <br>
                 Noch nicht registriert?<a href="#" onclick=warningImp()> Hier registrieren</a>
             </form>
-
-
         </div>
     </div>
 </div>

@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="login controller hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/php/Passwort.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Aufgaben.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Reiter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/ToDos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Reiter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/templates/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +54,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\testAufgaben" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ReiterViews" />
       <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\ProjekteViews" />
-      <recent name="C:\Users\Alexander Winzig\PhpstormProjects\Webentwicklung\Codeigniter4WE\app\Views\PersonenViews" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -128,17 +128,6 @@
 
 </body>
 <footer>
-    <?php
-    if (isset($aufgaben)) {
-        foreach ($aufgaben as $aufgabe) {
-            echo 'Die ID ist: ' . ($aufgabe['id']) . "<br>" .
-                'Die Aufgabe lautet: ' . ($aufgabe['bezeichnung']) . "<br>" .
-                'Die Beschreibung ist: ' . ($aufgabe['beschreibung']) . "<br>" .
-                'Der Reiter: ' . ($aufgabe['reiter']) . "<br>" .
-                'Zu bearbeiten von: ' . ($aufgabe['zustaendig']) . "<br>" .
-                "<br>" . "<br>";
-        }
-    }
-    ?>
+
 </footer>
 </html>

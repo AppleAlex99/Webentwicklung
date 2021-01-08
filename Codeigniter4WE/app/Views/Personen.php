@@ -29,8 +29,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"> <?php echo($mitglieder[0]['name']) ?> </th>
-                    <td> <?php echo($mitglieder[0]['email']) ?> </td>
+                    <th scope="row"> <?php echo($mitglieder[0]['Benutzername']) ?> </th>
+                    <td> <?php echo($mitglieder[0]['Email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -55,8 +55,8 @@
 
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo($mitglieder[1]['name']) ?> </th>
-                    <td> <?php echo($mitglieder[1]['email']) ?> </td>
+                    <th scope="row"> <?php echo($mitglieder[1]['Benutzername']) ?> </th>
+                    <td> <?php echo($mitglieder[1]['Email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -80,8 +80,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo($mitglieder[2]['name']) ?> </th>
-                    <td> <?php echo($mitglieder[2]['email']) ?> </td>
+                    <th scope="row"> <?php echo($mitglieder[2]['Benutzername']) ?> </th>
+                    <td> <?php echo($mitglieder[2]['Email']) ?> </td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -134,16 +134,6 @@
     </div>
 </body>
 <footer>
-    <?php
-    if (isset($mitglieder)) {
-        foreach ($mitglieder as $mitglied) {
-            echo 'Die Personen-ID ist: ' . ($mitglied['id']) . "<br>" .
-                'Der Name der Person: ' . ($mitglied['name']) . "<br>" .
-                'Die E-Mail-Adresse ist: ' . ($mitglied['email']) . "<br>" .
-                'Die Projekt-ID: ' . ($mitglied['projektID']) . "<br>" .
-                "<br>" . "<br>";
-        }
-    }
-    ?>
+
 </footer>
 </html>

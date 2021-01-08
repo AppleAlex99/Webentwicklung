@@ -18,12 +18,17 @@ class Login extends BaseController
                     $this->session->set('loggedin', TRUE);
                     //
                     //
-                    return redirect()->to(base_url() . '/Personen');
+                    return redirect()->to(base_url(). '/ToDos');
                 }
             }
         }
         echo view('templates/header.php');
         echo view('Login');
         echo view('templates/footer');
+    }
+
+    public function logout(){
+        $this->session->destroy();
+        return redirect()->to(base_url() . '/login');
     }
 }
