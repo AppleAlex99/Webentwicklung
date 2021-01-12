@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="login controller hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/Codeigniter4WE/app/php/Passwort.php" afterDir="false" />
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="übung 6 angefangen und zur hälfte geschafft">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/LoginModel.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Aufgaben.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
     </list>
@@ -79,6 +77,8 @@
       <workItem from="1609842783025" duration="145000" />
       <workItem from="1609843318468" duration="899000" />
       <workItem from="1609846088851" duration="922000" />
+      <workItem from="1610484299057" duration="2203000" />
+      <workItem from="1610486757168" duration="2982000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -136,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609688014290</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="übung 6 angefangen und zur hälfte geschafft">
+      <created>1610110555023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610110555023</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +170,7 @@
     <MESSAGE value="aktueller Stand update!!!" />
     <MESSAGE value="Controller ergänzt" />
     <MESSAGE value="login controller hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="login controller hinzugefügt" />
+    <MESSAGE value="übung 6 angefangen und zur hälfte geschafft" />
+    <option name="LAST_COMMIT_MESSAGE" value="übung 6 angefangen und zur hälfte geschafft" />
   </component>
 </project>

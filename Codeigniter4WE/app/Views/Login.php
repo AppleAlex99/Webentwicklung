@@ -37,7 +37,7 @@
                 <br>
                 <br>
                 Noch nicht registriert?<a href="#" onclick=warningImp()> Hier registrieren</a>
-            </form>
+            <?=form_close()?>
         </div>
     </div>
 </div>

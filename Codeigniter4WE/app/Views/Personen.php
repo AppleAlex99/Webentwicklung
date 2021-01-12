@@ -127,8 +127,8 @@
                         </label>
                     </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Speichern</button>
-                <button class="btn btn-success" type="submit">Reset</button>
+                <button class="btn btn-primary" id="speichernPersonen" type="submit">Speichern</button>
+                <button class="btn btn-success" id="resetPersonen" type="submit">Reset</button>
             </form>
         </div>
     </div>
