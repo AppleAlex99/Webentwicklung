@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="übung 6 angefangen und zur hälfte geschafft">
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="übung 6 angefangen und zur hälfte geschafft 2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Personen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/LoginModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/PersonenModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Personen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Projekte.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,8 @@
       <workItem from="1609843318468" duration="899000" />
       <workItem from="1609846088851" duration="922000" />
       <workItem from="1610484299057" duration="2203000" />
-      <workItem from="1610486757168" duration="2982000" />
+      <workItem from="1610486757168" duration="3134000" />
+      <workItem from="1610534106304" duration="9471000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -143,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610110555023</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="übung 6 angefangen und zur hälfte geschafft 2.0">
+      <created>1610489883819</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610489883819</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +182,7 @@
     <MESSAGE value="Controller ergänzt" />
     <MESSAGE value="login controller hinzugefügt" />
     <MESSAGE value="übung 6 angefangen und zur hälfte geschafft" />
-    <option name="LAST_COMMIT_MESSAGE" value="übung 6 angefangen und zur hälfte geschafft" />
+    <MESSAGE value="übung 6 angefangen und zur hälfte geschafft 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="übung 6 angefangen und zur hälfte geschafft 2.0" />
   </component>
 </project>

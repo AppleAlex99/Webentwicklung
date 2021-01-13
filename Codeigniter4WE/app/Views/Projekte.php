@@ -25,37 +25,58 @@
                         if (isset($projekte)){
                         foreach ($projekte as $projekt){
                         ?>
-                        <option> <?php echo($projekt['bezeichnung'] . '<br>'); ?>
+                        <option> <?php echo($projekt['Name'] . '<br>'); ?>
                             <?php }
                             } ?>
 
-
                     </select>
                 </div>
-                <button class="btn btn-primary" type="submit">Auswählen</button>
-                <button class="btn btn-primary" type="submit">Bearbeiten</button>
-                <button class="btn btn-danger" type="submit">Löschen</button>
-            </form>
+                <button class="btn btn-primary" id="projektAuswaehlen" onclick="projektAusgewählt()" name="projektAuswaehlen" type="submit">Auswählen</button>
+                <?= form_open('projekte/projektLoes')?>
+                <button class="btn btn-danger" id="projektLöschen" onclick="projektGeloescht()" name="projektLöschen" type="submit">Löschen</button>
+                <?=form_close()?>
 
             <br>
             <br>
             <h3>Neues Projekt anlegen</h3>
-            <form>
+            <?= form_open('projekte/createPro')?>
                 <div class="form-group">
                     <label for="projektname">Projektname</label>
-                    <input type="text" class="form-control" id="projektname">
+                    <input type="text" class="form-control" id="projektName" name="projektName">
                     <br>
                     <label for="beschreibung">Projektbeschreibung</label>
-                    <textarea class="form-control" rows="5" id="beschreibung"></textarea>
+                    <textarea type="text" class="form-control" rows="5" id="projektBeschreibung" name="projektBeschreibung"></textarea>
                 </div>
-                <button class="btn btn-primary" type="submit">Speichern</button>
-                <button class="btn btn-success" type="submit">Reset</button>
-            </form>
+                <button class="btn btn-primary" id="neuesProjektSpeichern" name="neuesProjektSpeichern" type="submit">Speichern</button>
+                <button class="btn btn-success" id="neuesProjektReset" name="neuesProjektReset"  type="submit">Reset</button>
+            <?=form_close()?>
+            <br>
+                <br>
+                <br>
 
-
+            <h3>Ausgewähltes Projekt bearbeiten</h3>
+            <?= form_open('projekte/projektBearb')?>
+                <div class="form-group">
+                    <label for="projektname">neuer Projektname:</label>
+                    <input type="text" class="form-control" id="projektNameNeu" name="projektNameNeu">
+                    <br>
+                    <label for="beschreibung">neue Projektbeschreibung:</label>
+                    <textarea type="text" class="form-control" rows="5" id="projektBeschreibungNeu" name="projektBeschreibungNeu"></textarea>
+                </div>
+                <button class="btn btn-primary" id="ProjektBearbeiten"  name="ProjektBearbeiten" type="submit">Bearbeiten</button>
+            <?=form_close()?>
         </div>
     </div>
 </div>
+
+<script>
+    function projektAusgewählt() {
+        alert("Projekt erfolgreich ausgewählt!")
+    }
+    function projektGeloescht(){
+        alert("Projekt erfolgreich gelöscht!")
+    }
+</script>
 
 </body>
 <footer>

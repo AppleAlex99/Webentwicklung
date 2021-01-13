@@ -22,7 +22,7 @@ class PersonenModel extends Model
     }
 
     public function getPersonen($person_id = NULL) {
-        $this->personen = $this->db->table('personen');
+        $this->personen = $this->db->table('mitglieder');
         $this->personen->select('*');
         if ($person_id != NULL)
             $this->personen->where(id, $person_id);
@@ -40,14 +40,14 @@ class PersonenModel extends Model
     }
 
     public function updatePerson($personId,$personBenutzername, $personEmail, $personPasswort) {
-        $this->personen->where('mitgleider.ID', $personId);
+        $this->personen->where('mitglieder.ID', $personId);
         $this->personen->update(array('Benutzername' => $personBenutzername,
             'Email' => $personEmail,
             'Passwort' => $personPasswort));
     }
 
-    public function deletePerson($person_id = null) {
-        $this->personen->where('ID', $person_id);
+    public function deletePerson($personId = null) {
+        $this->personen->where('ID', $personId);
         $this->personen->delete();
     }
 }

@@ -33,4 +33,22 @@ class Validation
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
+
+    public $personLogin = [
+        'Email' => 'required',
+        'Passwort' => 'required',
+        'Checkbox' => 'required'
+    ];
+
+    public $personLogin_errors = [
+        'Email' => [
+            'required' => 'Bitte eine gültige Email Adresse eintragen!'
+        ],
+        'Passwort' => [
+            'required' => 'Bitte geben Sie ein Passwort ein!'
+        ],
+        'Checkbox' => [
+            'required' => 'Die Checkbox muss bestätigt werden!'
+        ]
+    ];
 }

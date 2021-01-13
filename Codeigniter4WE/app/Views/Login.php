@@ -18,15 +18,18 @@
         <div class="col">
             <?= form_open('login/index') ?>
                 <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="text" class="form-control" id="email" name="email">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" class="form-control <?= (isset($error['Email']))?'is-invalid':'' ?>" id="email" name="email">
+                    <div class="invalid-feedback"> <?= (isset($error['Email']))?$error['Email']:'' ?> </div>
                     <br>
-                    <label for="passwort">Passwort</label>
-                    <input type="password" class="form-control" id="passwort" name="passwort">
+                    <label for="passwort">Passwort:</label>
+                    <input type="password" class="form-control <?= (isset($error['Passwort']))?'is-invalid':'' ?>"  id="passwort" name="passwort">
+                    <div class="invalid-feedback"> <?= (isset($error['Passwort']))?$error['Passwort']:'' ?> </div>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input <?= (isset($error['Checkbox']))?'is-invalid':'' ?>" type="checkbox" value="" id="defaultCheck1">
+                    <div class="invalid-feedback"> <?= (isset($error['Checkbox']))?$error['Checkbox']:'' ?> </div>
                     <label class="form-check-label" for="defaultCheck1">
                         AGBs und Datenschutzbestimmungen akzeptieren
                     </label>

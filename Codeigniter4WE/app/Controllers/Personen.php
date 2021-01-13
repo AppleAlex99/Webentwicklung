@@ -7,11 +7,10 @@ use Psr\Log\NullLogger;
 
 class Personen extends BaseController
 {
-
-    public function __construct(){
-
+    public function __construct() {
+        // make model accessible within this class
+        $this->personenModel = new PersonenModel();
     }
-
 
     public function index()
     {
@@ -32,5 +31,20 @@ class Personen extends BaseController
             echo view('Personen');
             echo view('templates/footer');
         }
+    }
+
+    private function setPerson($personId = null, $personBenutzername, $personEmail, $personPasswort) {
+        // Person aktualisieren
+        if($personId != null) {
+            $this->personenModel->updatePerson($personId, $personBenutzername, $personEmail, $personPasswort);
+        }
+        // Person erstellen
+        else {
+            $this->personenModel->createPerson($personBenutzername, $personEmail, $personPasswort);
+        }
+    }
+
+    private function deletePerson($personId) {
+        $this->personenModel->deletePerson($personId);
     }
 }

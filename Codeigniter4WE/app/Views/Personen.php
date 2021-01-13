@@ -109,16 +109,16 @@
 
 
             <h3>Bearbeiten/Erstellen</h3>
-            <form>
+            <?= form_open('personen/setPerson') ?>
                 <div class="form-group">
-                    <label for="nutzername">Nutzername</label>
-                    <input type="text" class="form-control" id="nutzername">
+                    <label for="nutzername">Nutzername:</label>
+                    <input type="text" class="form-control" name="nutzername" id="nutzername">
                     <br>
-                    <label for="emailadr">E-Mail-Adresse</label>
-                    <input class="form-control" id="emailadr"/>
+                    <label for="emailadr">E-Mail-Adresse:</label>
+                    <input class="form-control" type="email" name="emailadr" id="emailadr"/>
                     <br>
-                    <label for="passwort2">Passwort</label>
-                    <input class="form-control" id="passwort2"/>
+                    <label for="passwort2">Passwort:</label>
+                    <input class="form-control" type="password" name="passwort2" id="passwort2"/>
                     <br>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -129,7 +129,28 @@
                 </div>
                 <button class="btn btn-primary" id="speichernPersonen" type="submit">Speichern</button>
                 <button class="btn btn-success" id="resetPersonen" type="submit">Reset</button>
-            </form>
+            <?=form_close()?>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>Mitglied löschen</h3>
+            <?= form_open('personen/deletePerson') ?>
+            <div class="form-group">
+                <label for="nutzername">Nutzername:</label>
+                <input type="text" class="form-control" name="nutzernameLöschen" id="nutzernameLöschen">
+                <br>
+                <label for="emailadr">E-Mail-Adresse:</label>
+                <input class="form-control" name="emailadrLöschen" type="email" id="emailadrLöschen"/>
+                <br>
+            </div>
+            <button class="btn btn-primary" id="löschenPersonen" type="submit">Löschen</button>
+            <button class="btn btn-success" id="abbrechenLöschenPersonen" type="submit">Abbrechen</button>
+            <?=form_close()?>
+
+
+
         </div>
     </div>
 </body>

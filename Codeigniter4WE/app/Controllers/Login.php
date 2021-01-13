@@ -15,13 +15,20 @@ class Login extends BaseController
     {
         $session = \Config\Services::session();
         if (isset($_POST['email']) && isset($_POST['passwort'])){
+            if ($this->validation->run($_POST, 'personLogin')){
             if ($this->PersonenModel->login() != NULL){
                 $passwort = $this->PersonenModel->login()['passwort'];
-                if (password_verify($_POST['passwort'], $passwort)){
+                if (password_verify($_POST['passwort'], $passwort)) {
                     $this->session->set('loggedin', TRUE);
-
+                }
                     return redirect()->to(base_url(). '/ToDos');
                 }
+            }
+            else{
+                $data['personen'] = $_POST;
+
+                $data['error'] = $this->validation->getErrors();
+                echo view('login/index');
             }
         }
         echo view('templates/header.php');
