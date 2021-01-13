@@ -15,7 +15,7 @@ class Personen extends BaseController
     public function index()
     {
         $mymodel = new PersonenModel();
-        $data['mitglieder'] = $mymodel->getData();
+        $data['mitglieder'] = $mymodel->getPersonen();
 
         echo view('templates/header.php');
         echo view('Personen', $data);
@@ -33,14 +33,14 @@ class Personen extends BaseController
         }
     }
 
-    private function setPerson($personId = null, $personBenutzername, $personEmail, $personPasswort) {
+    private function setPerson($personId) {
         // Person aktualisieren
         if($personId != null) {
-            $this->personenModel->updatePerson($personId, $personBenutzername, $personEmail, $personPasswort);
+            $this->personenModel->updatePerson($personId);
         }
         // Person erstellen
         else {
-            $this->personenModel->createPerson($personBenutzername, $personEmail, $personPasswort);
+            $this->personenModel->createPerson();
         }
     }
 

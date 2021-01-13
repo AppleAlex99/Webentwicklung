@@ -16,7 +16,7 @@
             <?php include('templates/navbar.php') ?>
         </div>
         <div class="col">
-            <form>
+            <?= form_open(('projekte/projektLoes'), array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="sel1">Projekt auswählen</label>
                     <select class="form-control" id="sel1">
@@ -31,15 +31,15 @@
 
                     </select>
                 </div>
-                <button class="btn btn-primary" id="projektAuswaehlen" onclick="projektAusgewählt()" name="projektAuswaehlen" type="submit">Auswählen</button>
-                <?= form_open('projekte/projektLoes')?>
+                <button class="btn btn-primary" id="projektAuswaehlen" onclick="projektAusgewaehlt()" name="projektAuswaehlen" type="submit">Auswählen</button>
+
                 <button class="btn btn-danger" id="projektLöschen" onclick="projektGeloescht()" name="projektLöschen" type="submit">Löschen</button>
                 <?=form_close()?>
 
             <br>
             <br>
             <h3>Neues Projekt anlegen</h3>
-            <?= form_open('projekte/createPro')?>
+            <?= form_open(('personen/createPro'), array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="projektname">Projektname</label>
                     <input type="text" class="form-control" id="projektName" name="projektName">
@@ -55,7 +55,7 @@
                 <br>
 
             <h3>Ausgewähltes Projekt bearbeiten</h3>
-            <?= form_open('projekte/projektBearb')?>
+            <?= form_open(('personen/createPro'), array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="projektname">neuer Projektname:</label>
                     <input type="text" class="form-control" id="projektNameNeu" name="projektNameNeu">
@@ -70,7 +70,7 @@
 </div>
 
 <script>
-    function projektAusgewählt() {
+    function projektAusgewaehlt() {
         alert("Projekt erfolgreich ausgewählt!")
     }
     function projektGeloescht(){

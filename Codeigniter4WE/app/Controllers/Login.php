@@ -1,34 +1,24 @@
 <?php namespace App\Controllers;
 
-use CodeIgniter\Controller;
-use App\Models\PersonenModel;
+use App\Models\LoginModel;
 use Config\Services;
 
 class Login extends BaseController
 {
     public function __construct(){
-        $this->PersonenModel = new PersonenModel();
-        $this->_session = Services::session();
+        $this->loginModel = new LoginModel();
+        $this->session = Services::session();
     }
 
     public function index()
     {
-        $session = \Config\Services::session();
         if (isset($_POST['email']) && isset($_POST['passwort'])){
-            if ($this->validation->run($_POST, 'personLogin')){
-            if ($this->PersonenModel->login() != NULL){
-                $passwort = $this->PersonenModel->login()['passwort'];
+            if ($this->loginModel->login() != NULL){
+                $passwort = $this->loginModel->login()['passwort'];
                 if (password_verify($_POST['passwort'], $passwort)) {
                     $this->session->set('loggedin', TRUE);
                 }
-                    return redirect()->to(base_url(). '/ToDos');
-                }
-            }
-            else{
-                $data['personen'] = $_POST;
-
-                $data['error'] = $this->validation->getErrors();
-                echo view('login/index');
+                return redirect()->to(base_url(). '/ToDos/index');
             }
         }
         echo view('templates/header.php');
@@ -40,4 +30,14 @@ class Login extends BaseController
         $this->session->destroy();
         return redirect()->to(base_url() . '/login');
     }
+
+    //if ($this->validation->run($_POST, 'personLogin')){
+
+
+    //            else{
+    //                $data['personen'] = $_POST;
+    //
+    //                $data['error'] = $this->validation->getErrors();
+    //                echo view('login/index');
+    //            }
 }

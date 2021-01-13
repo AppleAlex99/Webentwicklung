@@ -6,41 +6,26 @@ use App\Models\AufgabenModel;
 
 class Aufgaben extends BaseController
 {
-    public function index(){
 
-        $data['aufgaben'] = array(
-            0 => array(
-                'id' => 0,
-                'bezeichnung' => 'HTML-Datei',
-                'beschreibung' => 'HTML-Datei erstellen',
-                'reiter' => 'ToDo',
-                'zustaendig' => 'Alexander Winzig'
-            ),
+    public function __construct() {
+        // make model accessible within this class
+        $this->aufgabenModel = new AufgabenModel();
+    }
 
-            1 => array(
-                'id' => 1,
-                'bezeichnung' => 'CSS',
-                'beschreibung' => 'CSS-Datei erstellen',
-                'reiter' => 'ToDo',
-                'zustaendig' => 'Alexander Winzig'
-            ),
-            2 => array(
-                'id' => 2,
-                'bezeichnung' => 'Datenbanksysteme',
-                'beschreibung' => 'Datenbanksysteme Übung 4 bearbeiten',
-                'reiter' => 'Must do',
-                'zustaendig' => 'Alexander Winzig'
-            ),
-        );
+    public function index()
+    {
+        $mymodel = new AufgabenModel();
+        $data['aufgaben'] = $mymodel->getAufgaben();
+
         echo view('templates/header.php');
         echo view('Aufgaben', $data);
         echo view('templates/footer');
-
     }
 
+
     public function aufgabenTable(){
-        $mymodel = new PersonenModel();
-        $data['aufgaben'] = $mymodel->getData();
+        $mymodel = new AufgabenModel();
+        $data['aufgaben'] = $mymodel->getAufgaben();
 
         echo view('Aufgaben', $data);
     }

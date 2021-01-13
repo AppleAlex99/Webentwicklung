@@ -16,7 +16,7 @@
             <?php include('templates/navbar.php') ?>
         </div>
         <div class="col">
-            <?= form_open('login/index') ?>
+            <?= form_open('login/index' , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="email">E-Mail:</label>
                     <input type="text" class="form-control <?= (isset($error['Email']))?'is-invalid':'' ?>" id="email" name="email">
@@ -50,9 +50,6 @@
         alert("Noch nicht implementiert")
     }
 </script>
-
-<!-- Da die letzte Aufgabe bei mir auf dem Mac nicht funktioniert hat, hier eine Anfragen auf der WebentwicklungsDB-->
-
 
 </body>
 <footer>

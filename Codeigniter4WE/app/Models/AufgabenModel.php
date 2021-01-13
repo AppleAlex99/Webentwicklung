@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class AufgabenModel extends Model
 {
-    public function getData(){
+    public function getAufgaben(){
         $result = $this->db->query('SELECT * FROM aufgaben order by ID');
         return $result->getResultArray();
     }

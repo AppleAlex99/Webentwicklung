@@ -29,10 +29,9 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row"> <?php echo($aufgaben[0]['bezeichnung']); ?> </th>
-                    <td> <?php echo($aufgaben[0]['beschreibung']); ?> </td>
-                    <td> <?php echo($aufgaben[0]['reiter']); ?> </td>
-                    <td> <?php echo($aufgaben[0]['zustaendig']); ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[0]['Name']); ?> </th>
+                    <td> <?php echo($aufgaben[0]['Beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[0]['reiterID']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -50,10 +49,9 @@
 
                 </tr>
                 <tr>
-                    <th scope="row"> <?php echo($aufgaben[1]['bezeichnung']); ?> </th>
-                    <td> <?php echo($aufgaben[1]['beschreibung']); ?> </td>
-                    <td> <?php echo($aufgaben[1]['reiter']); ?> </td>
-                    <td> <?php echo($aufgaben[1]['zustaendig']); ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[1]['Name']); ?> </th>
+                    <td> <?php echo($aufgaben[1]['Beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[1]['reiterID']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -71,10 +69,9 @@
                 </tr>
                 <tr>
 
-                    <th scope="row"> <?php echo($aufgaben[2]['bezeichnung']); ?> </th>
-                    <td> <?php echo($aufgaben[2]['beschreibung']); ?> </td>
-                    <td> <?php echo($aufgaben[2]['reiter']); ?> </td>
-                    <td> <?php echo($aufgaben[2]['zustaendig']); ?> </td>
+                    <th scope="row"> <?php echo($aufgaben[2]['Name']); ?> </th>
+                    <td> <?php echo($aufgaben[2]['Beschreibung']); ?> </td>
+                    <td> <?php echo($aufgaben[2]['reiterID']); ?> </td>
                     <td>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +93,7 @@
             <br>
             <br>
             <h3>Neues Projekt anlegen</h3>
-            <form>
+            <?= form_open(('personen/setPerson'), array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="aufgabenbez">Aufgabenbezeichnung</label>
                     <input type="text" class="form-control" id="aufgabenbez">
