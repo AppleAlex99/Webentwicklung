@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="Übung 6 alle teile fertig, funktioniert jedoch noch nicht im zusammenspiel mit der db.&#10;&#10;Übung 7 teilweise enthalten">
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Config/Validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Views/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1610486757168" duration="3134000" />
       <workItem from="1610534106304" duration="9644000" />
       <workItem from="1610554682807" duration="6941000" />
-      <workItem from="1610633361947" duration="1155000" />
+      <workItem from="1610633361947" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610561671887</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert">
+      <created>1610634793905</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610634793905</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +201,7 @@
     <MESSAGE value="übung 6 angefangen und zur hälfte geschafft 2.0" />
     <MESSAGE value="übung 7 Aufgabe 1 und 2 alle funktionen erstellt im Model und im Controller!&#10;Den rest bekomme ich nicht ans laufen!" />
     <MESSAGE value="Übung 6 alle teile fertig, funktioniert jedoch noch nicht im zusammenspiel mit der db.&#10;&#10;Übung 7 teilweise enthalten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Übung 6 alle teile fertig, funktioniert jedoch noch nicht im zusammenspiel mit der db.&#10;&#10;Übung 7 teilweise enthalten" />
+    <MESSAGE value="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert" />
   </component>
 </project>

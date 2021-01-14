@@ -5,32 +5,34 @@ use CodeIgniter\Model;
 
 class ProjekteModel extends Model
 {
-    public function getData(){
+    public function getProjekte(){
         $result = $this->db->query('SELECT * FROM projekte order by ID');
         return $result->getResultArray();
     }
 
-    public function createProject($projektName, $beschreibung, $erstellerID)
+    public function createProjekte()
     {
-        $this->_projects->insert([
-            "Name" => $projektName,
-            "Beschreibung" => $beschreibung,
-            "creator_id" => $erstellerID
-        ]);
+        $this->projekte = $this->db->table('projekte');
+        $this->projekte->insert(array('Name' => $_POST['projektName'],
+            'Beschreibung' => $_POST['projektBeschreibung'],
+            'ErstellerID' => '1'));
     }
 
-    public function deleteProjekt($projektID)
+    public function updateProjekte($projectId = null)
     {
-        $this->projekte->where('ID', $projektID);
+        $this->projekte = $this->db->table('projekte');
+        $this->projekte->where($_POST['projektID'], $projectId);
+        $this->projekte->update(array('Name' => $_POST['projektName'],
+            'Beschreibung' => $_POST['projektBeschreibung'],
+            'ErstellerID' => '1'));
+    }
+
+
+    public function deleteProjekt($projektId)
+    {
+        $this->projekte = $this->db->table('projekte');
+        $this->projekte->where('ID', $projektId);
         $this->projekte->delete();
     }
 
-    public function updateProjekt($projectID, $projectName, $description)
-    {
-        $this->_projects->where($_POST['projektID'], $projectID);
-        $this->_projects->update([
-            "projekt_name" => $projectName,
-            "description" => $description
-        ]);
-    }
 }

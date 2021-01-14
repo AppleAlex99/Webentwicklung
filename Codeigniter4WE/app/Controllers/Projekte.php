@@ -14,19 +14,19 @@ class Projekte extends BaseController
     public function index(){
 
         $mymodel = new ProjekteModel();
-        $data['projekte'] = $mymodel->getData();
+        $data['projekte'] = $mymodel->getProjekte();
 
         echo view('templates/header.php');
         echo view('Projekte', $data);
         echo view('templates/footer');
 
     }
-    public function createPro($projektName, $projektBeschreibung){
-        $this->projekteModel->createProjekte($projektName, $projektBeschreibung);
+    public function createPro(){
+        $this->projekteModel->createProjekte();
     }
 
-    public function projektBearb($projektName, $projektBeschreibung){
-        $this->projekteModel->updateProjekte($projektName, $projektBeschreibung);
+    public function projektBearb(){
+        $this->projekteModel->updateProjekte();
     }
 
     public function projektLoes($projektID){
