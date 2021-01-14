@@ -22,8 +22,8 @@ class ProjekteModel extends Model
     {
         $this->projekte = $this->db->table('projekte');
         $this->projekte->where($_POST['projektID'], $projectId);
-        $this->projekte->update(array('Name' => $_POST['projektName'],
-            'Beschreibung' => $_POST['projektBeschreibung'],
+        $this->projekte->update(array('Name' => $_POST['projektNameNeu'],
+            'Beschreibung' => $_POST['projektBeschreibungNeu'],
             'ErstellerID' => '1'));
     }
 
