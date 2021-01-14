@@ -24,20 +24,23 @@ class Login extends BaseController
         echo view('templates/header.php');
         echo view('Login');
         echo view('templates/footer');
-    }
 
+        if (isset($_POST['btnsubmit'])) {
+            if ($this->validation->run($_POST, 'personLogin')) {
+                //Dann werden die Änderungen gemacht
+            }else{
+                //Daten zurück ans Formular
+                $data['mitglieder'] = $_POST;
+
+                //Fehlermeldung generieren
+                $data['error'] = $this->validation->getErrors();
+                echo view('Login', $data);
+            }
+        }
+        }
     public function logout(){
         $this->session->destroy();
         return redirect()->to(base_url() . '/login');
     }
 
-    //if ($this->validation->run($_POST, 'personLogin')){
-
-
-    //            else{
-    //                $data['personen'] = $_POST;
-    //
-    //                $data['error'] = $this->validation->getErrors();
-    //                echo view('login/index');
-    //            }
 }
