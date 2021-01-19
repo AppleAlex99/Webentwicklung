@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Controllers/Projekte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Codeigniter4WE/app/Models/ProjekteModel.php" afterDir="false" />
-    </list>
+    <list default="true" id="f650a916-a57d-46f6-8e2d-2cf9ba6060f7" name="Default Changelist" comment="bei update projekte die post vars geändert, name war vorher falsch eingetragen" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +73,8 @@
       <workItem from="1610486757168" duration="3134000" />
       <workItem from="1610534106304" duration="9644000" />
       <workItem from="1610554682807" duration="6941000" />
-      <workItem from="1610633361947" duration="2435000" />
+      <workItem from="1610633361947" duration="2578000" />
+      <workItem from="1611079343484" duration="7123000" />
     </task>
     <task id="LOCAL-00001" summary="test windows auf mac in index.php &quot;lol&quot;">
       <created>1607961880161</created>
@@ -170,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610634793905</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fuer uebung 7 versucht die projekte funktionen hinzugefügt klappt jedoch auch nicht so ganz mit der db, da die weiterleitung an die funktion nicht klappt">
+      <created>1610635845021</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610635845021</updated>
+    </task>
+    <task id="LOCAL-00015" summary="bei update projekte die post vars geändert, name war vorher falsch eingetragen">
+      <created>1610635952720</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610635952720</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +213,8 @@
     <MESSAGE value="übung 7 Aufgabe 1 und 2 alle funktionen erstellt im Model und im Controller!&#10;Den rest bekomme ich nicht ans laufen!" />
     <MESSAGE value="Übung 6 alle teile fertig, funktioniert jedoch noch nicht im zusammenspiel mit der db.&#10;&#10;Übung 7 teilweise enthalten" />
     <MESSAGE value="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuer uebung 7 versucht die fehlermeldungen zu implementieren, hat nicht geklappt&#10;aber soweit alle komponenten programmiert" />
+    <MESSAGE value="fuer uebung 7 versucht die projekte funktionen hinzugefügt klappt jedoch auch nicht so ganz mit der db, da die weiterleitung an die funktion nicht klappt" />
+    <MESSAGE value="bei update projekte die post vars geändert, name war vorher falsch eingetragen" />
+    <option name="LAST_COMMIT_MESSAGE" value="bei update projekte die post vars geändert, name war vorher falsch eingetragen" />
   </component>
 </project>

@@ -10,20 +10,25 @@ class Login extends BaseController
         $this->session = Services::session();
     }
 
-    public function index()
-    {
-        if (isset($_POST['email']) && isset($_POST['passwort'])){
-            if ($this->loginModel->login() != NULL){
-                $passwort = $this->loginModel->login()['passwort'];
-                if (password_verify($_POST['passwort'], $passwort)) {
-                    $this->session->set('loggedin', TRUE);
-                }
-                return redirect()->to(base_url(). '/ToDos/index');
-            }
-        }
+    public function index(){
         echo view('templates/header.php');
         echo view('Login');
         echo view('templates/footer');
+    }
+
+    public function login()
+    {
+        if (isset($_POST['email']) && isset($_POST['passwort'])){
+            if ($this->loginModel->login($_POST['email']) != NULL){
+                $passwort = $this->loginModel->login($_POST['email']);
+                $passwort = $passwort['Passwort'];
+                if (password_verify($_POST['passwort'], $passwort)) {
+                    $this->session->set('loggedin', TRUE);
+                    $this->session->set('mail', $_POST['email']);
+                }
+                return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte'));
+            }
+        }
 
         if (isset($_POST['btnsubmit'])) {
             if ($this->validation->run($_POST, 'personLogin')) {

@@ -16,7 +16,7 @@
             <?php include('templates/navbar.php') ?>
         </div>
         <div class="col">
-            <?= form_open(('projekte/projektLoes'), array('role' => 'form')) ?>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte/projektAusw') , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="sel1">Projekt auswählen</label>
                     <select class="form-control" id="sel1">
@@ -32,14 +32,13 @@
                     </select>
                 </div>
                 <button class="btn btn-primary" id="projektAuswaehlen" onclick="projektAusgewaehlt()" name="projektAuswaehlen" type="submit">Auswählen</button>
-
-                <button class="btn btn-danger" id="projektLöschen" onclick="projektGeloescht()" name="projektLöschen" type="submit">Löschen</button>
-                <?=form_close()?>
-
+            <?=form_close()?>
+            <br>
+            <br>
             <br>
             <br>
             <h3>Neues Projekt anlegen</h3>
-            <?= form_open(('personen/createPro'), array('role' => 'form')) ?>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte/createPro') , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="projektname">Projektname</label>
                     <input type="text" class="form-control" id="projektName" name="projektName">
@@ -48,14 +47,14 @@
                     <textarea type="text" class="form-control" rows="5" id="projektBeschreibung" name="projektBeschreibung"></textarea>
                 </div>
                 <button class="btn btn-primary" id="neuesProjektSpeichern" name="neuesProjektSpeichern" type="submit">Speichern</button>
-                <button class="btn btn-success" id="neuesProjektReset" name="neuesProjektReset"  type="submit">Reset</button>
+                <button class="btn btn-success" id="neuesProjektReset" name="neuesProjektReset"  type="reset">Reset</button>
             <?=form_close()?>
             <br>
-                <br>
-                <br>
-
+            <br>
+            <br>
+            <br>
             <h3>Ausgewähltes Projekt bearbeiten</h3>
-            <?= form_open(('personen/createPro'), array('role' => 'form')) ?>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte/projektBearb') , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="projektname">neuer Projektname:</label>
                     <input type="text" class="form-control" id="projektNameNeu" name="projektNameNeu">
@@ -64,6 +63,19 @@
                     <textarea type="text" class="form-control" rows="5" id="projektBeschreibungNeu" name="projektBeschreibungNeu"></textarea>
                 </div>
                 <button class="btn btn-primary" id="ProjektBearbeiten"  name="ProjektBearbeiten" type="submit">Bearbeiten</button>
+            <?=form_close()?>
+            <br>
+            <br>
+            <br>
+            <br>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte/projektLoes') , array('role' => 'form')) ?>
+            <div class="form-group">
+                <label for="projektID">Projekt-ID:</label>
+                <input type="text" class="form-control" name="projektID" id="projektID">
+                <br>
+            </div>
+            <button class="btn btn-primary" name="projektLöschen" id="projektLöschen" type="submit">Löschen</button>
+            <button class="btn btn-success" id="projektLöschen" onclick="reload()" type="reset" >Abbrechen</button>
             <?=form_close()?>
         </div>
     </div>

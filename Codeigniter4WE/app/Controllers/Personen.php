@@ -33,18 +33,23 @@ class Personen extends BaseController
         }
     }
 
-    private function setPerson($personId) {
-        // Person aktualisieren
-        if($personId != null) {
-            $this->personenModel->updatePerson($personId);
-        }
-        // Person erstellen
-        else {
-            $this->personenModel->createPerson();
-        }
+    public function crPerson()
+    {
+        $this->personenModel->createPerson($_POST['nutzername'], $_POST['emailadr'], $_POST['passwort2']);
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/'));
     }
 
-    private function deletePerson($personId) {
-        $this->personenModel->deletePerson($personId);
+
+    public function bearbPerson($personId)
+    {
+        $this->personenModel->updatePerson($personId);
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/'));
+    }
+
+
+
+    public function deletePerson() {
+        $this->personenModel->deletePerson($_POST['idLöschen']);
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/Personen'));
     }
 }

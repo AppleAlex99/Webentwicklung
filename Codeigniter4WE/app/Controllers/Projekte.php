@@ -22,15 +22,22 @@ class Projekte extends BaseController
 
     }
     public function createPro(){
-        $this->projekteModel->createProjekte();
+        $this->projekteModel->createProjekte($_POST['projektName'], $_POST['projektBeschreibung'], 2);
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte'));
     }
 
     public function projektBearb(){
         $this->projekteModel->updateProjekte();
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte'));
     }
 
-    public function projektLoes($projektID){
-        $this->projekteModel->deleteProjekt($projektID);
+    public function projektLoes(){
+        $this->projekteModel->deleteProjekt($_POST['projektID']);
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/Projekte'));
+    }
+
+    public function projektAusw(){
+        return redirect()->to(base_url('/Webentwicklung/Codeigniter4WE/public/ToDos'));
     }
 
 }

@@ -106,10 +106,12 @@
                 </tr>
                 </tbody>
             </table>
-
-
-            <h3>Bearbeiten/Erstellen</h3>
-            <?= form_open('personen/setPerson') ?>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Erstellen</h3>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Personen/crPerson') , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="nutzername">Nutzername:</label>
                     <input type="text" class="form-control" name="nutzername" id="nutzername">
@@ -134,19 +136,44 @@
             <br>
             <br>
             <br>
-
-            <h3>Mitglied löschen</h3>
-            <?= form_open('personen/deletePerson') ?>
+            <h3>Bearbeiten</h3>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Personen/bearbPerson') , array('role' => 'form')) ?>
             <div class="form-group">
-                <label for="nutzername">Nutzername:</label>
-                <input type="text" class="form-control" name="nutzernameLöschen" id="nutzernameLöschen">
+                <label for="benutzerID">BenutzerID:</label>
+                <input type="text" class="form-control" name="benutzerID" id="benutzerID">
                 <br>
-                <label for="emailadr">E-Mail-Adresse:</label>
-                <input class="form-control" name="emailadrLöschen" type="email" id="emailadrLöschen"/>
+                <label for="nutzername">neuer Nutzername:</label>
+                <input type="text" class="form-control" name="nutzername" id="nutzername">
+                <br>
+                <label for="emailadr">neue E-Mail-Adresse:</label>
+                <input class="form-control" type="email" name="emailadr" id="emailadr"/>
+                <br>
+                <label for="passwort2">mit Passwort bestätigen:</label>
+                <input class="form-control" type="password" name="passwort2" id="passwort2"/>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Dem Projekt zugeordnet
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="speichernPersonen" type="submit">Speichern</button>
+            <button class="btn btn-success" id="resetPersonen" type="reset">Reset</button>
+            <?=form_close()?>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Mitglied löschen</h3>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Personen/deletePerson') , array('role' => 'form')) ?>
+            <div class="form-group">
+                <label for="nutzername">Nutzer-ID:</label>
+                <input type="text" class="form-control" name="idLöschen" id="idLöschen">
                 <br>
             </div>
             <button class="btn btn-primary" id="löschenPersonen" type="submit">Löschen</button>
-            <button class="btn btn-success" id="abbrechenLöschenPersonen" type="submit">Abbrechen</button>
+            <button class="btn btn-success" id="abbrechenLöschenPersonen" onclick="reload()" type="reset" >Abbrechen</button>
             <?=form_close()?>
 
 
@@ -155,6 +182,12 @@
     </div>
 </body>
 <footer>
+
+    <script>
+        function reload(){
+            location.reload();
+        }
+    </script>
 
 </footer>
 </html>

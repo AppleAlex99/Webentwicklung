@@ -16,7 +16,7 @@
             <?php include('templates/navbar.php') ?>
         </div>
         <div class="col">
-            <?= form_open('login/index' , array('role' => 'form')) ?>
+            <?= form_open(base_url('/Webentwicklung/Codeigniter4WE/public/Login/login') , array('role' => 'form')) ?>
                 <div class="form-group">
                     <label for="email">E-Mail:</label>
                     <input type="text" class="form-control <?= (isset($error['Email']))?'is-invalid':'' ?>" id="email" name="email">
